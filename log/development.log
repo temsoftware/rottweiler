@@ -1,0 +1,906 @@
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to AddAttachmentsDataToAffiliate (20091104222551)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mMysql::Error: Table 'hottweiler_development.affiliates' doesn't exist: ALTER TABLE `affiliates` ADD `data_file_name` varchar(255)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to AddAttachmentsDataToAffiliate (20091104222551)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mMysql::Error: Table 'hottweiler_development.affiliates' doesn't exist: ALTER TABLE `affiliates` ADD `data_file_name` varchar(255)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateAffiliates (20091104222806)
+  [4;36;1mSQL (68.1ms)[0m   [0;1mCREATE TABLE `affiliates` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `website` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091104222806')[0m
+Migrating to AddAttachmentsDataToAffiliate (20091104222942)
+  [4;36;1mSQL (155.1ms)[0m   [0;1mALTER TABLE `affiliates` ADD `data_file_name` varchar(255)[0m
+  [4;35;1mSQL (131.0ms)[0m   [0mALTER TABLE `affiliates` ADD `data_content_type` varchar(255)[0m
+  [4;36;1mSQL (132.3ms)[0m   [0;1mALTER TABLE `affiliates` ADD `data_file_size` int(11)[0m
+  [4;35;1mSQL (176.8ms)[0m   [0mALTER TABLE `affiliates` ADD `data_updated_at` datetime[0m
+  [4;36;1mSQL (7.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20091104222942')[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (6.9ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSHOW FIELDS FROM `affiliates`[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mdescribe `affiliates`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW KEYS FROM `affiliates`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-04 20:34:54) [GET]
+
+SyntaxError (/Users/alisonasoo/Sites/hottweiler/app/controllers/affiliates_controller.rb:4: syntax error, unexpected tSYMBEG
+    item.columns = [:name. :website]
+                            ^):
+  
+
+Rendered rescues/_trace (30.7ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mAffiliate Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `affiliates`[0m
+
+
+Processing AffiliatesController#index (for 127.0.0.1 at 2009-11-04 20:35:40) [GET]
+  [4;35;1mSQL (2.0ms)[0m   [0mSELECT count(*) AS count_all FROM `affiliates` [0m
+  [4;36;1mAffiliate Load (0.4ms)[0m   [0;1mSELECT `affiliates`.* FROM `affiliates` ORDER BY affiliates.`id` ASC LIMIT 0, 15[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT `affiliates`.* FROM `affiliates` ORDER BY affiliates.`id` ASC LIMIT 0, 15[0m
+Rendering list
+Rendered _list_header (42.7ms)
+Rendered _list_column_headings (6.7ms)
+Rendered _messages (1.0ms)
+Rendered _list (20.2ms)
+Completed in 169ms (View: 92, DB: 4) | 200 OK [http://localhost/affiliates]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mAffiliate Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `affiliates`[0m
+
+
+Processing AffiliatesController#index (for 127.0.0.1 at 2009-11-04 20:36:01) [GET]
+  [4;35;1mSQL (4.3ms)[0m   [0mSELECT count(*) AS count_all FROM `affiliates` [0m
+  [4;36;1mAffiliate Load (1.4ms)[0m   [0;1mSELECT `affiliates`.* FROM `affiliates` ORDER BY affiliates.`id` ASC LIMIT 0, 15[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT `affiliates`.* FROM `affiliates` ORDER BY affiliates.`id` ASC LIMIT 0, 15[0m
+Rendering template within layouts/admin
+Rendering list
+Rendered _list_header (9.1ms)
+Rendered _list_column_headings (5.3ms)
+Rendered _messages (1.0ms)
+Rendered _list (14.9ms)
+Completed in 81ms (View: 71, DB: 7) | 200 OK [http://localhost/affiliates]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mAffiliate Columns (12.9ms)[0m   [0;1mSHOW FIELDS FROM `affiliates`[0m
+
+
+Processing AffiliatesController#index (for 127.0.0.1 at 2009-11-04 20:36:06) [GET]
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `affiliates` [0m
+  [4;36;1mAffiliate Load (0.2ms)[0m   [0;1mSELECT `affiliates`.* FROM `affiliates` ORDER BY affiliates.`id` ASC LIMIT 0, 15[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT `affiliates`.* FROM `affiliates` ORDER BY affiliates.`id` ASC LIMIT 0, 15[0m
+Rendering template within layouts/admin
+Rendering list
+Rendered _list_header (11.8ms)
+Rendered _list_column_headings (4.4ms)
+Rendered _messages (1.0ms)
+Rendered _list (21.6ms)
+Completed in 72ms (View: 67, DB: 14) | 200 OK [http://localhost/affiliates]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mAffiliate Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `affiliates`[0m
+
+
+Processing AffiliatesController#new (for 127.0.0.1 at 2009-11-04 20:36:08) [GET]
+  Parameters: {"adapter"=>"_list_inline_adapter"}
+Rendered _form_attribute (1.6ms)
+Rendered _form_attribute (0.7ms)
+
+ActionView::TemplateError (undefined method `data' for #<Affiliate:0x2471420>) on line #7 of vendor/plugins/active_scaffold/frontends/default/views/_form_attribute.html.erb:
+4:     <label for="<%= active_scaffold_input_options(column, scope)[:id] %>"><%= column.label %></label>
+5:   </dt>
+6:   <dd>
+7:     <%= active_scaffold_input_for column, scope %>
+8:     <% if column.description -%>
+9:       <span class="description"><%= column.description %></span>
+10:     <% end -%>
+
+    vendor/plugins/active_scaffold/frontends/default/views/_form_attribute.html.erb:7
+    vendor/plugins/active_scaffold/frontends/default/views/_form.html.erb:14
+    vendor/plugins/active_scaffold/frontends/default/views/_form.html.erb:2
+    vendor/plugins/active_scaffold/frontends/default/views/_create_form.html.erb:40
+
+Rendered rescues/_trace (81.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mAffiliate Columns (6.5ms)[0m   [0mSHOW FIELDS FROM `affiliates`[0m
+
+
+Processing AffiliatesController#index (for 127.0.0.1 at 2009-11-04 20:36:15) [GET]
+  [4;36;1mSQL (10.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `affiliates` [0m
+  [4;35;1mAffiliate Load (4.6ms)[0m   [0mSELECT `affiliates`.* FROM `affiliates` ORDER BY affiliates.`id` ASC LIMIT 0, 15[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT `affiliates`.* FROM `affiliates` ORDER BY affiliates.`id` ASC LIMIT 0, 15[0m
+Rendering template within layouts/admin
+Rendering list
+Rendered _list_header (2.4ms)
+Rendered _list_column_headings (3.9ms)
+Rendered _messages (0.9ms)
+Rendered _list (14.4ms)
+Completed in 60ms (View: 41, DB: 21) | 200 OK [http://localhost/affiliates]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mAffiliate Columns (6.1ms)[0m   [0mSHOW FIELDS FROM `affiliates`[0m
+
+
+Processing AffiliatesController#new (for 127.0.0.1 at 2009-11-04 20:36:16) [GET]
+  Parameters: {"adapter"=>"_list_inline_adapter"}
+Rendered _form_attribute (1.7ms)
+Rendered _form_attribute (6.3ms)
+
+ActionView::TemplateError (undefined method `data' for #<Affiliate:0x2627990>) on line #7 of vendor/plugins/active_scaffold/frontends/default/views/_form_attribute.html.erb:
+4:     <label for="<%= active_scaffold_input_options(column, scope)[:id] %>"><%= column.label %></label>
+5:   </dt>
+6:   <dd>
+7:     <%= active_scaffold_input_for column, scope %>
+8:     <% if column.description -%>
+9:       <span class="description"><%= column.description %></span>
+10:     <% end -%>
+
+    vendor/plugins/active_scaffold/frontends/default/views/_form_attribute.html.erb:7
+    vendor/plugins/active_scaffold/frontends/default/views/_form.html.erb:14
+    vendor/plugins/active_scaffold/frontends/default/views/_form.html.erb:2
+    vendor/plugins/active_scaffold/frontends/default/views/_create_form.html.erb:40
+
+Rendered rescues/_trace (109.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mAffiliate Columns (8.3ms)[0m   [0;1mSHOW FIELDS FROM `affiliates`[0m
+
+
+Processing AffiliatesController#index (for 127.0.0.1 at 2009-11-04 20:40:03) [GET]
+  [4;35;1mSQL (13.0ms)[0m   [0mSELECT count(*) AS count_all FROM `affiliates` [0m
+  [4;36;1mAffiliate Load (2.0ms)[0m   [0;1mSELECT `affiliates`.* FROM `affiliates` ORDER BY affiliates.`id` ASC LIMIT 0, 15[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT `affiliates`.* FROM `affiliates` ORDER BY affiliates.`id` ASC LIMIT 0, 15[0m
+Rendering template within layouts/admin
+Rendering list
+Rendered _list_header (2.6ms)
+Rendered _list_column_headings (4.7ms)
+Rendered _messages (3.3ms)
+Rendered _list (24.8ms)
+Completed in 78ms (View: 58, DB: 23) | 200 OK [http://localhost/affiliates]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mAffiliate Columns (11.6ms)[0m   [0;1mSHOW FIELDS FROM `affiliates`[0m
+
+
+Processing AffiliatesController#new (for 127.0.0.1 at 2009-11-04 20:40:04) [GET]
+  Parameters: {"adapter"=>"_list_inline_adapter"}
+Rendered _form_attribute (1.5ms)
+Rendered _form_attribute (0.5ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form (8.7ms)
+Rendered _create_form (15.6ms)
+Rendered _messages (0.9ms)
+Rendered _list_inline_adapter (9.2ms)
+Completed in 47ms (View: 12, DB: 0) | 200 OK [http://localhost/affiliates/new?_method=get&adapter=_list_inline_adapter]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mAffiliate Columns (16.5ms)[0m   [0mSHOW FIELDS FROM `affiliates`[0m
+
+
+Processing AffiliatesController#show_search (for 127.0.0.1 at 2009-11-04 20:40:25) [GET]
+  Parameters: {"adapter"=>"_list_inline_adapter"}
+Rendered _search (2.8ms)
+Rendered _messages (1.0ms)
+Rendered _list_inline_adapter (5.4ms)
+Completed in 31ms (View: 8, DB: 0) | 200 OK [http://localhost/affiliates/show_search?_method=get&adapter=_list_inline_adapter]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mAffiliate Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `affiliates`[0m
+
+
+Processing AffiliatesController#new (for 127.0.0.1 at 2009-11-04 20:40:30) [GET]
+  Parameters: {"adapter"=>"_list_inline_adapter"}
+Rendered _form_attribute (1.4ms)
+Rendered _form_attribute (0.5ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form (8.6ms)
+Rendered _create_form (15.6ms)
+Rendered _messages (0.9ms)
+Rendered _list_inline_adapter (4.9ms)
+Completed in 106ms (View: 8, DB: 0) | 200 OK [http://localhost/affiliates/new?_method=get&adapter=_list_inline_adapter]
+  [4;35;1mSQL (0.6ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mAffiliate Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `affiliates`[0m
+
+
+Processing AffiliatesController#create (for 127.0.0.1 at 2009-11-04 20:41:31) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"lZRRyJUpnR5hHh+D0pqR1+AwDt8sDz+rtheVC2JtuxA=", "_"=>"", "record"=>{"name"=>"Seguradora 1", "website"=>"www.seg1.com.br", "data"=>"/datas/original/missing.png"}}
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mAffiliate Create (0.3ms)[0m   [0mINSERT INTO `affiliates` (`name`, `updated_at`, `data_updated_at`, `data_file_name`, `data_content_type`, `data_file_size`, `website`, `created_at`) VALUES('Seguradora 1', '2009-11-04 22:41:31', NULL, NULL, NULL, NULL, 'www.seg1.com.br', '2009-11-04 22:41:31')[0m
+[paperclip] Saving attachments.
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+Rendering on_create
+Rendered _list_actions (2.6ms)
+Rendered _list_record (8.4ms)
+Rendered _messages (0.9ms)
+Completed in 36ms (View: 29, DB: 4) | 200 OK [http://localhost/affiliates/create]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mAffiliate Columns (4.7ms)[0m   [0mSHOW FIELDS FROM `affiliates`[0m
+
+
+Processing AffiliatesController#edit (for 127.0.0.1 at 2009-11-04 20:41:37) [GET]
+  Parameters: {"adapter"=>"_list_inline_adapter", "id"=>"1", "_"=>""}
+  [4;36;1mAffiliate Load (45.9ms)[0m   [0;1mSELECT * FROM `affiliates` WHERE (`affiliates`.`id` = 1) [0m
+Rendered _form_attribute (1.6ms)
+Rendered _form_attribute (0.5ms)
+Rendered _form (8.2ms)
+Rendered _update_form (18.6ms)
+Rendered _messages (1.1ms)
+Rendered _list_inline_adapter (10.5ms)
+Completed in 107ms (View: 13, DB: 0) | 200 OK [http://localhost/affiliates/edit/1?_=&_method=get&adapter=_list_inline_adapter]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mAffiliate Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `affiliates`[0m
+
+
+Processing AffiliatesController#update (for 127.0.0.1 at 2009-11-04 20:41:44) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"lZRRyJUpnR5hHh+D0pqR1+AwDt8sDz+rtheVC2JtuxA=", "id"=>"1", "_"=>"", "record"=>{"name"=>"Seguradora 11", "website"=>"www.seg11.com.br"}}
+  [4;36;1mAffiliate Load (0.4ms)[0m   [0;1mSELECT * FROM `affiliates` WHERE (`affiliates`.`id` = 1) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mAffiliate Update (68.8ms)[0m   [0;1mUPDATE `affiliates` SET `website` = 'www.seg11.com.br', `updated_at` = '2009-11-04 22:41:44', `name` = 'Seguradora 11' WHERE `id` = 1[0m
+[paperclip] Saving attachments.
+  [4;35;1mSQL (0.7ms)[0m   [0mCOMMIT[0m
+Rendering on_update
+Rendered _messages (1.0ms)
+Completed in 109ms (View: 33, DB: 72) | 200 OK [http://localhost/affiliates/update/1?_=]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mAffiliate Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `affiliates`[0m
+
+
+Processing AffiliatesController#row (for 127.0.0.1 at 2009-11-04 20:41:44) [GET]
+  Parameters: {"id"=>"1", "_"=>""}
+  [4;35;1mAffiliate Load (3.8ms)[0m   [0mSELECT * FROM `affiliates` WHERE (`affiliates`.`id` = 1) [0m
+Rendered _list_actions (2.7ms)
+Rendered _list_record (10.8ms)
+Completed in 34ms (View: 27, DB: 6) | 200 OK [http://localhost/affiliates/row/1?_=&_method=get]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mAffiliate Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `affiliates`[0m
+
+
+Processing AffiliatesController#update_table (for 127.0.0.1 at 2009-11-04 20:41:51) [GET]
+  Parameters: {"search"=>"S", "commit"=>"Search"}
+  [4;35;1mSQL (60.4ms)[0m   [0mSELECT count(*) AS count_all FROM `affiliates` WHERE ((((LOWER(affiliates.`data_content_type`) LIKE '%s%' OR LOWER(affiliates.`data_file_name`) LIKE '%s%' OR LOWER(affiliates.`name`) LIKE '%s%' OR LOWER(affiliates.`website`) LIKE '%s%')))) [0m
+  [4;36;1mAffiliate Load (0.5ms)[0m   [0;1mSELECT `affiliates`.* FROM `affiliates` WHERE ((((LOWER(affiliates.`data_content_type`) LIKE '%s%' OR LOWER(affiliates.`data_file_name`) LIKE '%s%' OR LOWER(affiliates.`name`) LIKE '%s%' OR LOWER(affiliates.`website`) LIKE '%s%')))) ORDER BY affiliates.`id` ASC LIMIT 0, 15[0m
+Rendered _list_column_headings (3.8ms)
+Rendered _messages (0.9ms)
+Rendered _list_actions (2.7ms)
+Rendered _list_record (8.6ms)
+Rendered _list (23.7ms)
+Completed in 105ms (View: 38, DB: 63) | 200 OK [http://localhost/affiliates/update_table?search=S&commit=Search]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mAffiliate Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `affiliates`[0m
+
+
+Processing AffiliatesController#update_table (for 127.0.0.1 at 2009-11-04 20:41:55) [GET]
+  Parameters: {"search"=>"", "commit"=>"Search"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `affiliates` [0m
+  [4;35;1mAffiliate Load (0.2ms)[0m   [0mSELECT `affiliates`.* FROM `affiliates` ORDER BY affiliates.`id` ASC LIMIT 0, 15[0m
+Rendered _list_column_headings (3.7ms)
+Rendered _messages (0.9ms)
+Rendered _list_actions (2.4ms)
+Rendered _list_record (7.8ms)
+Rendered _list (22.5ms)
+Completed in 40ms (View: 37, DB: 2) | 200 OK [http://localhost/affiliates/update_table?search=&commit=Search]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mAffiliate Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `affiliates`[0m
+
+
+Processing AffiliatesController#new (for 127.0.0.1 at 2009-11-04 20:41:59) [GET]
+  Parameters: {"adapter"=>"_list_inline_adapter"}
+Rendered _form_attribute (1.3ms)
+Rendered _form_attribute (0.5ms)
+Rendered _form_attribute (1.0ms)
+Rendered _form (8.6ms)
+Rendered _create_form (15.5ms)
+Rendered _messages (1.0ms)
+Rendered _list_inline_adapter (78.6ms)
+Completed in 113ms (View: 81, DB: 0) | 200 OK [http://localhost/affiliates/new?_method=get&adapter=_list_inline_adapter]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mAffiliate Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `affiliates`[0m
+
+
+Processing AffiliatesController#show (for 127.0.0.1 at 2009-11-04 20:44:12) [GET]
+  Parameters: {"search"=>"", "adapter"=>"_list_inline_adapter", "id"=>"1"}
+  [4;36;1mAffiliate Load (0.4ms)[0m   [0;1mSELECT * FROM `affiliates` WHERE (`affiliates`.`id` = 1) [0m
+Rendered _show_columns (1.7ms)
+Rendered _show (6.3ms)
+Rendered _messages (0.9ms)
+Rendered _list_inline_adapter (5.0ms)
+Completed in 32ms (View: 8, DB: 0) | 200 OK [http://localhost/affiliates/show/1?_method=get&search=&adapter=_list_inline_adapter]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mAffiliate Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `affiliates`[0m
+
+
+Processing AffiliatesController#row (for 127.0.0.1 at 2009-11-04 20:44:16) [GET]
+  Parameters: {"search"=>"", "id"=>"1"}
+  [4;36;1mAffiliate Load (0.3ms)[0m   [0;1mSELECT * FROM `affiliates` WHERE (`affiliates`.`id` = 1) [0m
+Rendered _list_actions (2.5ms)
+Rendered _list_record (8.5ms)
+Completed in 25ms (View: 23, DB: 2) | 200 OK [http://localhost/affiliates/row/1?_method=get&search=]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mAffiliate Columns (4.6ms)[0m   [0mSHOW FIELDS FROM `affiliates`[0m
+
+
+Processing AffiliatesController#new (for 127.0.0.1 at 2009-11-04 20:44:27) [GET]
+  Parameters: {"adapter"=>"_list_inline_adapter"}
+Rendered _form_attribute (1.7ms)
+Rendered _form_attribute (0.5ms)
+Rendered _form_attribute (0.9ms)
+Rendered _form (9.4ms)
+Rendered _create_form (19.6ms)
+Rendered _messages (1.0ms)
+Rendered _list_inline_adapter (6.3ms)
+Completed in 62ms (View: 11, DB: 0) | 200 OK [http://localhost/affiliates/new?_method=get&adapter=_list_inline_adapter]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mAffiliate Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `affiliates`[0m
+
+
+Processing AffiliatesController#show (for 127.0.0.1 at 2009-11-04 20:44:33) [GET]
+  Parameters: {"search"=>"", "adapter"=>"_list_inline_adapter", "id"=>"1"}
+  [4;35;1mAffiliate Load (0.8ms)[0m   [0mSELECT * FROM `affiliates` WHERE (`affiliates`.`id` = 1) [0m
+Rendered _show_columns (2.5ms)
+Rendered _show (7.3ms)
+Rendered _messages (0.9ms)
+Rendered _list_inline_adapter (5.3ms)
+Completed in 40ms (View: 8, DB: 0) | 200 OK [http://localhost/affiliates/show/1?_method=get&search=&adapter=_list_inline_adapter]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mAffiliate Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `affiliates`[0m
+
+
+Processing AffiliatesController#new (for 127.0.0.1 at 2009-11-04 20:44:40) [GET]
+  Parameters: {"adapter"=>"_list_inline_adapter"}
+Rendered _form_attribute (1.4ms)
+Rendered _form_attribute (0.5ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form (8.9ms)
+Rendered _create_form (16.1ms)
+Rendered _messages (1.3ms)
+Rendered _list_inline_adapter (5.6ms)
+Completed in 42ms (View: 8, DB: 0) | 200 OK [http://localhost/affiliates/new?_method=get&adapter=_list_inline_adapter]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mAffiliate Columns (102.3ms)[0m   [0;1mSHOW FIELDS FROM `affiliates`[0m
+
+
+Processing AffiliatesController#index (for 127.0.0.1 at 2009-11-04 20:47:05) [GET]
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `affiliates` [0m
+  [4;36;1mAffiliate Load (0.8ms)[0m   [0;1mSELECT `affiliates`.* FROM `affiliates` ORDER BY affiliates.`id` ASC LIMIT 0, 15[0m
+Rendering template within layouts/admin
+Rendering list
+Rendered _list_header (14.8ms)
+Rendered _list_column_headings (9.2ms)
+Rendered _messages (1.0ms)
+Rendered _list_actions (3.0ms)
+Rendered _list_record (9.8ms)
+Rendered _list (43.7ms)
+Completed in 100ms (View: 89, DB: 104) | 200 OK [http://localhost/affiliates]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mAffiliate Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `affiliates`[0m
+
+
+Processing AffiliatesController#new (for 127.0.0.1 at 2009-11-04 20:47:07) [GET]
+  Parameters: {"adapter"=>"_list_inline_adapter"}
+Rendered _form_attribute (1.4ms)
+Rendered _form_attribute (0.5ms)
+Rendered _form_attribute (0.4ms)
+Rendered _form (8.5ms)
+Rendered _create_form (16.2ms)
+Rendered _messages (0.9ms)
+Rendered _list_inline_adapter (5.0ms)
+Completed in 97ms (View: 8, DB: 0) | 200 OK [http://localhost/affiliates/new?_method=get&adapter=_list_inline_adapter]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mAffiliate Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `affiliates`[0m
+
+
+Processing AffiliatesController#create (for 127.0.0.1 at 2009-11-04 20:47:42) [POST]
+  Parameters: {"commit"=>"Create", "iframe"=>"true", "authenticity_token"=>"lZRRyJUpnR5hHh+D0pqR1+AwDt8sDz+rtheVC2JtuxA=", "record"=>{"name"=>"Seg2", "website"=>"seg2.com", "data"=>#<File:/var/folders/SG/SGUwYks8FY4HFKrHUsS94k+++TI/-Tmp-/RackMultipart.3397.0>}}
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+[paperclip] An error was received while processing: #<Paperclip::NotIdentifiedByImageMagickError: /var/folders/SG/SGUwYks8FY4HFKrHUsS94k+++TI/-Tmp-/stream.3397.0 is not recognized by the 'identify' command.>
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCOMMIT[0m
+Rendering form_messages_on_create
+Rendered _messages (0.9ms)
+Rendered _form_messages (28.9ms)
+Completed in 273ms (View: 1, DB: 0) | 200 OK [http://localhost/affiliates/create?iframe=true]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mAffiliate Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `affiliates`[0m
+
+
+Processing AffiliatesController#create (for 127.0.0.1 at 2009-11-04 20:48:05) [POST]
+  Parameters: {"commit"=>"Create", "iframe"=>"true", "authenticity_token"=>"lZRRyJUpnR5hHh+D0pqR1+AwDt8sDz+rtheVC2JtuxA=", "record"=>{"name"=>"Seg2", "website"=>"seg2.com", "data"=>#<File:/var/folders/SG/SGUwYks8FY4HFKrHUsS94k+++TI/-Tmp-/RackMultipart.3397.1>}}
+  [4;36;1mSQL (45.9ms)[0m   [0;1mBEGIN[0m
+[paperclip] An error was received while processing: #<Paperclip::NotIdentifiedByImageMagickError: /var/folders/SG/SGUwYks8FY4HFKrHUsS94k+++TI/-Tmp-/stream.3397.1 is not recognized by the 'identify' command.>
+  [4;35;1mSQL (0.2ms)[0m   [0mCOMMIT[0m
+Rendering form_messages_on_create
+Rendered _messages (0.8ms)
+Rendered _form_messages (4.9ms)
+Completed in 243ms (View: 1, DB: 0) | 200 OK [http://localhost/affiliates/create?iframe=true]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mAffiliate Columns (8.7ms)[0m   [0;1mSHOW FIELDS FROM `affiliates`[0m
+
+
+Processing AffiliatesController#index (for 127.0.0.1 at 2009-11-04 20:57:50) [GET]
+  [4;35;1mSQL (6.0ms)[0m   [0mSELECT count(*) AS count_all FROM `affiliates` [0m
+  [4;36;1mAffiliate Load (1.0ms)[0m   [0;1mSELECT `affiliates`.* FROM `affiliates` ORDER BY affiliates.`id` ASC LIMIT 0, 15[0m
+Rendering template within layouts/admin
+Rendering list
+Rendered _list_header (12.4ms)
+Rendered _list_column_headings (4.3ms)
+Rendered _messages (1.0ms)
+Rendered _list_actions (3.2ms)
+Rendered _list_record (10.4ms)
+Rendered _list (28.6ms)
+Completed in 91ms (View: 74, DB: 16) | 200 OK [http://localhost/affiliates]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mAffiliate Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `affiliates`[0m
+
+
+Processing AffiliatesController#new (for 127.0.0.1 at 2009-11-04 20:57:52) [GET]
+  Parameters: {"adapter"=>"_list_inline_adapter"}
+Rendered _form_attribute (1.6ms)
+Rendered _form_attribute (0.5ms)
+Rendered _form_attribute (0.4ms)
+Rendered _form (9.3ms)
+Rendered _create_form (16.8ms)
+Rendered _messages (0.9ms)
+Rendered _list_inline_adapter (5.1ms)
+Completed in 128ms (View: 8, DB: 0) | 200 OK [http://localhost/affiliates/new?_method=get&adapter=_list_inline_adapter]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mAffiliate Columns (11.2ms)[0m   [0;1mSHOW FIELDS FROM `affiliates`[0m
+
+
+Processing AffiliatesController#create (for 127.0.0.1 at 2009-11-04 20:58:02) [POST]
+  Parameters: {"commit"=>"Create", "iframe"=>"true", "authenticity_token"=>"lZRRyJUpnR5hHh+D0pqR1+AwDt8sDz+rtheVC2JtuxA=", "record"=>{"name"=>"A", "website"=>"A", "data"=>#<File:/var/folders/SG/SGUwYks8FY4HFKrHUsS94k+++TI/-Tmp-/RackMultipart.3487.0>}}
+  [4;35;1mSQL (10.3ms)[0m   [0mBEGIN[0m
+[paperclip] An error was received while processing: #<Paperclip::NotIdentifiedByImageMagickError: /var/folders/SG/SGUwYks8FY4HFKrHUsS94k+++TI/-Tmp-/stream.3487.0 is not recognized by the 'identify' command.>
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCOMMIT[0m
+Rendering form_messages_on_create
+Rendered _messages (1.0ms)
+Rendered _form_messages (15.3ms)
+Completed in 174ms (View: 1, DB: 0) | 200 OK [http://localhost/affiliates/create?iframe=true]
+  [4;35;1mSQL (0.8ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mAffiliate Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `affiliates`[0m
+
+
+Processing AffiliatesController#create (for 127.0.0.1 at 2009-11-04 20:58:16) [POST]
+  Parameters: {"commit"=>"Create", "iframe"=>"true", "authenticity_token"=>"lZRRyJUpnR5hHh+D0pqR1+AwDt8sDz+rtheVC2JtuxA=", "record"=>{"name"=>"A", "website"=>"A", "data"=>#<File:/var/folders/SG/SGUwYks8FY4HFKrHUsS94k+++TI/-Tmp-/RackMultipart.3487.1>}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+[paperclip] An error was received while processing: #<Paperclip::NotIdentifiedByImageMagickError: /var/folders/SG/SGUwYks8FY4HFKrHUsS94k+++TI/-Tmp-/stream.3487.1 is not recognized by the 'identify' command.>
+  [4;35;1mSQL (0.2ms)[0m   [0mCOMMIT[0m
+Rendering form_messages_on_create
+Rendered _messages (0.9ms)
+Rendered _form_messages (5.2ms)
+Completed in 126ms (View: 1, DB: 0) | 200 OK [http://localhost/affiliates/create?iframe=true]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mAffiliate Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `affiliates`[0m
+
+
+Processing AffiliatesController#create (for 127.0.0.1 at 2009-11-04 20:58:41) [POST]
+  Parameters: {"commit"=>"Create", "iframe"=>"true", "authenticity_token"=>"lZRRyJUpnR5hHh+D0pqR1+AwDt8sDz+rtheVC2JtuxA=", "record"=>{"name"=>"A", "website"=>"A", "data"=>#<File:/var/folders/SG/SGUwYks8FY4HFKrHUsS94k+++TI/-Tmp-/RackMultipart.3487.2>}}
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+[paperclip] An error was received while processing: #<Paperclip::NotIdentifiedByImageMagickError: /var/folders/SG/SGUwYks8FY4HFKrHUsS94k+++TI/-Tmp-/stream.3487.2 is not recognized by the 'identify' command.>
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+Rendering form_messages_on_create
+Rendered _messages (1.0ms)
+Rendered _form_messages (6.2ms)
+Completed in 50ms (View: 1, DB: 0) | 200 OK [http://localhost/affiliates/create?iframe=true]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mAffiliate Columns (4.9ms)[0m   [0mSHOW FIELDS FROM `affiliates`[0m
+
+
+Processing AffiliatesController#index (for 127.0.0.1 at 2009-11-04 20:58:46) [GET]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM `affiliates` [0m
+  [4;35;1mAffiliate Load (0.2ms)[0m   [0mSELECT `affiliates`.* FROM `affiliates` ORDER BY affiliates.`id` ASC LIMIT 0, 15[0m
+Rendering template within layouts/admin
+Rendering list
+Rendered _list_header (2.7ms)
+Rendered _list_column_headings (4.2ms)
+Rendered _messages (1.0ms)
+Rendered _list_actions (2.7ms)
+Rendered _list_record (11.1ms)
+Rendered _list (44.0ms)
+Completed in 85ms (View: 79, DB: 6) | 200 OK [http://localhost/affiliates]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mAffiliate Columns (7.9ms)[0m   [0;1mSHOW FIELDS FROM `affiliates`[0m
+
+
+Processing AffiliatesController#new (for 127.0.0.1 at 2009-11-04 20:58:47) [GET]
+  Parameters: {"adapter"=>"_list_inline_adapter"}
+Rendered _form_attribute (1.7ms)
+Rendered _form_attribute (0.6ms)
+Rendered _form_attribute (0.5ms)
+Rendered _form (10.8ms)
+Rendered _create_form (25.7ms)
+Rendered _messages (0.9ms)
+Rendered _list_inline_adapter (5.2ms)
+Completed in 183ms (View: 9, DB: 0) | 200 OK [http://localhost/affiliates/new?_method=get&adapter=_list_inline_adapter]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mAffiliate Columns (6.3ms)[0m   [0mSHOW FIELDS FROM `affiliates`[0m
+
+
+Processing AffiliatesController#create (for 127.0.0.1 at 2009-11-04 20:58:54) [POST]
+  Parameters: {"commit"=>"Create", "iframe"=>"true", "authenticity_token"=>"lZRRyJUpnR5hHh+D0pqR1+AwDt8sDz+rtheVC2JtuxA=", "record"=>{"name"=>"asdsad", "website"=>"sadasd", "data"=>#<File:/var/folders/SG/SGUwYks8FY4HFKrHUsS94k+++TI/-Tmp-/RackMultipart.3487.3>}}
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+[paperclip] An error was received while processing: #<Paperclip::NotIdentifiedByImageMagickError: /var/folders/SG/SGUwYks8FY4HFKrHUsS94k+++TI/-Tmp-/stream.3487.0 is not recognized by the 'identify' command.>
+  [4;35;1mSQL (0.2ms)[0m   [0mCOMMIT[0m
+Rendering form_messages_on_create
+Rendered _messages (1.2ms)
+Rendered _form_messages (8.6ms)
+Completed in 68ms (View: 1, DB: 0) | 200 OK [http://localhost/affiliates/create?iframe=true]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mAffiliate Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `affiliates`[0m
+
+
+Processing AffiliatesController#index (for 127.0.0.1 at 2009-11-04 20:59:27) [GET]
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `affiliates` [0m
+  [4;36;1mAffiliate Load (0.3ms)[0m   [0;1mSELECT `affiliates`.* FROM `affiliates` ORDER BY affiliates.`id` ASC LIMIT 0, 15[0m
+Rendering template within layouts/admin
+Rendering list
+Rendered _list_header (4.3ms)
+Rendered _list_column_headings (4.7ms)
+Rendered _messages (1.0ms)
+Rendered _list_actions (2.9ms)
+Rendered _list_record (9.9ms)
+Rendered _list (29.6ms)
+Completed in 69ms (View: 64, DB: 3) | 200 OK [http://localhost/affiliates]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mAffiliate Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `affiliates`[0m
+
+
+Processing AffiliatesController#new (for 127.0.0.1 at 2009-11-04 20:59:28) [GET]
+  Parameters: {"adapter"=>"_list_inline_adapter"}
+Rendered _form_attribute (1.5ms)
+Rendered _form_attribute (0.6ms)
+Rendered _form_attribute (0.4ms)
+Rendered _form (9.3ms)
+Rendered _create_form (16.2ms)
+Rendered _messages (0.9ms)
+Rendered _list_inline_adapter (4.9ms)
+Completed in 41ms (View: 8, DB: 0) | 200 OK [http://localhost/affiliates/new?_method=get&adapter=_list_inline_adapter]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mAffiliate Columns (17.2ms)[0m   [0;1mSHOW FIELDS FROM `affiliates`[0m
+
+
+Processing AffiliatesController#create (for 127.0.0.1 at 2009-11-04 20:59:33) [POST]
+  Parameters: {"commit"=>"Create", "iframe"=>"true", "authenticity_token"=>"lZRRyJUpnR5hHh+D0pqR1+AwDt8sDz+rtheVC2JtuxA=", "record"=>{"name"=>"SADSADSA", "website"=>"DSADSAD", "data"=>#<File:/var/folders/SG/SGUwYks8FY4HFKrHUsS94k+++TI/-Tmp-/RackMultipart.3487.0>}}
+  [4;35;1mSQL (0.4ms)[0m   [0mBEGIN[0m
+[paperclip] An error was received while processing: #<Paperclip::NotIdentifiedByImageMagickError: /var/folders/SG/SGUwYks8FY4HFKrHUsS94k+++TI/-Tmp-/stream.3487.0 is not recognized by the 'identify' command.>
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCOMMIT[0m
+Rendering form_messages_on_create
+Rendered _messages (1.0ms)
+Rendered _form_messages (7.6ms)
+Completed in 132ms (View: 1, DB: 0) | 200 OK [http://localhost/affiliates/create?iframe=true]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mAffiliate Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `affiliates`[0m
+
+
+Processing AffiliatesController#create (for 127.0.0.1 at 2009-11-04 21:00:37) [POST]
+  Parameters: {"commit"=>"Create", "iframe"=>"true", "authenticity_token"=>"lZRRyJUpnR5hHh+D0pqR1+AwDt8sDz+rtheVC2JtuxA=", "record"=>{"name"=>"SADSADSA", "website"=>"DSADSAD", "data"=>#<File:/var/folders/SG/SGUwYks8FY4HFKrHUsS94k+++TI/-Tmp-/RackMultipart.3487.1>}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+[paperclip] An error was received while processing: #<Paperclip::NotIdentifiedByImageMagickError: /var/folders/SG/SGUwYks8FY4HFKrHUsS94k+++TI/-Tmp-/stream.3487.1 is not recognized by the 'identify' command.>
+  [4;35;1mSQL (0.2ms)[0m   [0mCOMMIT[0m
+Rendering form_messages_on_create
+Rendered _messages (0.9ms)
+Rendered _form_messages (6.0ms)
+Completed in 113ms (View: 1, DB: 0) | 200 OK [http://localhost/affiliates/create?iframe=true]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mAffiliate Columns (6.3ms)[0m   [0;1mSHOW FIELDS FROM `affiliates`[0m
+
+
+Processing AffiliatesController#index (for 127.0.0.1 at 2009-11-04 21:00:41) [GET]
+  [4;35;1mSQL (2.2ms)[0m   [0mSELECT count(*) AS count_all FROM `affiliates` [0m
+  [4;36;1mAffiliate Load (0.4ms)[0m   [0;1mSELECT `affiliates`.* FROM `affiliates` ORDER BY affiliates.`id` ASC LIMIT 0, 15[0m
+Rendering template within layouts/admin
+Rendering list
+Rendered _list_header (2.6ms)
+Rendered _list_column_headings (9.4ms)
+Rendered _messages (1.1ms)
+Rendered _list_actions (2.8ms)
+Rendered _list_record (10.2ms)
+Rendered _list (42.8ms)
+Completed in 97ms (View: 88, DB: 9) | 200 OK [http://localhost/affiliates]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mAffiliate Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `affiliates`[0m
+
+
+Processing AffiliatesController#new (for 127.0.0.1 at 2009-11-04 21:00:41) [GET]
+  Parameters: {"adapter"=>"_list_inline_adapter"}
+Rendered _form_attribute (1.5ms)
+Rendered _form_attribute (0.5ms)
+Rendered _form_attribute (0.4ms)
+Rendered _form (9.2ms)
+Rendered _create_form (18.3ms)
+Rendered _messages (1.0ms)
+Rendered _list_inline_adapter (86.2ms)
+Completed in 126ms (View: 90, DB: 0) | 200 OK [http://localhost/affiliates/new?_method=get&adapter=_list_inline_adapter]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mAffiliate Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `affiliates`[0m
+
+
+Processing AffiliatesController#create (for 127.0.0.1 at 2009-11-04 21:00:46) [POST]
+  Parameters: {"commit"=>"Create", "iframe"=>"true", "authenticity_token"=>"lZRRyJUpnR5hHh+D0pqR1+AwDt8sDz+rtheVC2JtuxA=", "record"=>{"name"=>"dssads", "website"=>"dds", "data"=>#<File:/var/folders/SG/SGUwYks8FY4HFKrHUsS94k+++TI/-Tmp-/RackMultipart.3487.2>}}
+  [4;35;1mSQL (0.8ms)[0m   [0mBEGIN[0m
+[paperclip] An error was received while processing: #<Paperclip::NotIdentifiedByImageMagickError: /var/folders/SG/SGUwYks8FY4HFKrHUsS94k+++TI/-Tmp-/stream.3487.0 is not recognized by the 'identify' command.>
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCOMMIT[0m
+Rendering form_messages_on_create
+Rendered _messages (8.8ms)
+Rendered _form_messages (14.7ms)
+Completed in 91ms (View: 1, DB: 0) | 200 OK [http://localhost/affiliates/create?iframe=true]
+ActiveScaffold: extending RESTful routes for affiliates
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mAffiliate Columns (4.9ms)[0m   [0;1mSHOW FIELDS FROM `affiliates`[0m
+
+
+Processing AffiliatesController#index (for 127.0.0.1 at 2009-11-04 21:05:54) [GET]
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `affiliates` [0m
+  [4;36;1mAffiliate Load (0.4ms)[0m   [0;1mSELECT `affiliates`.* FROM `affiliates` ORDER BY affiliates.`id` ASC LIMIT 0, 15[0m
+Rendering template within layouts/admin
+Rendering list
+Rendered _list_header (16.1ms)
+Rendered _list_column_headings (8.9ms)
+Rendered _messages (1.0ms)
+Rendered _list_actions (6.1ms)
+Rendered _list_record (18.5ms)
+Rendered _list (44.0ms)
+Completed in 116ms (View: 105, DB: 6) | 200 OK [http://localhost/affiliates]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mAffiliate Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `affiliates`[0m
+
+
+Processing AffiliatesController#new (for 127.0.0.1 at 2009-11-04 21:05:56) [GET]
+  Parameters: {"adapter"=>"_list_inline_adapter"}
+Rendered _form_attribute (1.5ms)
+Rendered _form_attribute (0.5ms)
+Rendered _form_attribute (0.4ms)
+Rendered _form (8.4ms)
+Rendered _create_form (15.6ms)
+Rendered _messages (0.9ms)
+Rendered _list_inline_adapter (4.8ms)
+Completed in 40ms (View: 7, DB: 0) | 200 OK [http://localhost/affiliates/new?_method=get&adapter=_list_inline_adapter]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mAffiliate Columns (4.6ms)[0m   [0;1mSHOW FIELDS FROM `affiliates`[0m
+
+
+Processing AffiliatesController#create (for 127.0.0.1 at 2009-11-04 21:06:00) [POST]
+  Parameters: {"commit"=>"Create", "iframe"=>"true", "authenticity_token"=>"lZRRyJUpnR5hHh+D0pqR1+AwDt8sDz+rtheVC2JtuxA=", "record"=>{"name"=>"asdsadd", "website"=>"sadsadsad", "data"=>#<File:/var/folders/SG/SGUwYks8FY4HFKrHUsS94k+++TI/-Tmp-/RackMultipart.3566.0>}}
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+[paperclip] An error was received while processing: #<Paperclip::NotIdentifiedByImageMagickError: /var/folders/SG/SGUwYks8FY4HFKrHUsS94k+++TI/-Tmp-/stream.3566.0 is not recognized by the 'identify' command.>
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCOMMIT[0m
+Rendering form_messages_on_create
+Rendered _messages (1.4ms)
+Rendered _form_messages (6.5ms)
+Completed in 129ms (View: 1, DB: 0) | 200 OK [http://localhost/affiliates?iframe=true]
+ActiveScaffold: extending RESTful routes for affiliates
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mAffiliate Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `affiliates`[0m
+
+
+Processing AffiliatesController#index (for 127.0.0.1 at 2009-11-04 21:07:50) [GET]
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `affiliates` [0m
+  [4;36;1mAffiliate Load (0.3ms)[0m   [0;1mSELECT `affiliates`.* FROM `affiliates` ORDER BY affiliates.`id` ASC LIMIT 0, 15[0m
+Rendering template within layouts/admin
+Rendering list
+Rendered _list_header (11.6ms)
+Rendered _list_column_headings (3.9ms)
+Rendered _messages (1.1ms)
+Rendered _list_actions (3.0ms)
+Rendered _list_record (9.1ms)
+Rendered _list (81.7ms)
+Completed in 132ms (View: 122, DB: 3) | 200 OK [http://localhost/affiliates]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-04 21:07:50) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/lightbox.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mAffiliate Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `affiliates`[0m
+
+
+Processing AffiliatesController#new (for 127.0.0.1 at 2009-11-04 21:07:51) [GET]
+  Parameters: {"adapter"=>"_list_inline_adapter"}
+Rendered _form_attribute (1.6ms)
+Rendered _form_attribute (0.5ms)
+Rendered _form_attribute (0.4ms)
+Rendered _form (8.8ms)
+Rendered _create_form (29.3ms)
+Rendered _messages (1.1ms)
+Rendered _list_inline_adapter (5.9ms)
+Completed in 62ms (View: 9, DB: 0) | 200 OK [http://localhost/affiliates/new?_method=get&adapter=_list_inline_adapter]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mAffiliate Columns (6.8ms)[0m   [0;1mSHOW FIELDS FROM `affiliates`[0m
+
+
+Processing AffiliatesController#create (for 127.0.0.1 at 2009-11-04 21:07:55) [POST]
+  Parameters: {"commit"=>"Create", "iframe"=>"true", "authenticity_token"=>"lZRRyJUpnR5hHh+D0pqR1+AwDt8sDz+rtheVC2JtuxA=", "record"=>{"name"=>"dasd", "website"=>"dsadad", "data"=>#<File:/var/folders/SG/SGUwYks8FY4HFKrHUsS94k+++TI/-Tmp-/RackMultipart.3584.0>}}
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+[paperclip] An error was received while processing: #<Paperclip::NotIdentifiedByImageMagickError: /var/folders/SG/SGUwYks8FY4HFKrHUsS94k+++TI/-Tmp-/stream.3584.0 is not recognized by the 'identify' command.>
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCOMMIT[0m
+Rendering form_messages_on_create
+Rendered _messages (1.1ms)
+Rendered _form_messages (6.5ms)
+Completed in 208ms (View: 1, DB: 0) | 200 OK [http://localhost/affiliates?iframe=true]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mAffiliate Columns (9.6ms)[0m   [0mSHOW FIELDS FROM `affiliates`[0m
+
+
+Processing AffiliatesController#create (for 127.0.0.1 at 2009-11-04 21:08:02) [POST]
+  Parameters: {"commit"=>"Create", "iframe"=>"true", "authenticity_token"=>"lZRRyJUpnR5hHh+D0pqR1+AwDt8sDz+rtheVC2JtuxA=", "record"=>{"name"=>"dasd", "website"=>"dsadad", "data"=>#<File:/var/folders/SG/SGUwYks8FY4HFKrHUsS94k+++TI/-Tmp-/RackMultipart.3584.1>}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+[paperclip] An error was received while processing: #<Paperclip::NotIdentifiedByImageMagickError: /var/folders/SG/SGUwYks8FY4HFKrHUsS94k+++TI/-Tmp-/stream.3584.1 is not recognized by the 'identify' command.>
+  [4;35;1mSQL (0.2ms)[0m   [0mCOMMIT[0m
+Rendering form_messages_on_create
+Rendered _messages (0.9ms)
+Rendered _form_messages (6.0ms)
+Completed in 100ms (View: 1, DB: 0) | 200 OK [http://localhost/affiliates?iframe=true]
+ActiveScaffold: extending RESTful routes for affiliates
+  [4;36;1mSQL (1.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mAffiliate Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `affiliates`[0m
+
+
+Processing AffiliatesController#index (for 127.0.0.1 at 2009-11-04 21:19:09) [GET]
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `affiliates` [0m
+  [4;36;1mAffiliate Load (0.3ms)[0m   [0;1mSELECT `affiliates`.* FROM `affiliates` ORDER BY affiliates.`id` ASC LIMIT 0, 15[0m
+Rendering template within layouts/admin
+Rendering list
+Rendered _list_header (11.6ms)
+Rendered _list_column_headings (4.0ms)
+Rendered _messages (0.9ms)
+Rendered _list_actions (3.0ms)
+Rendered _list_record (9.0ms)
+Rendered _list (82.1ms)
+Completed in 133ms (View: 123, DB: 5) | 200 OK [http://localhost/affiliates]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-04 21:19:10) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/lightbox.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mAffiliate Columns (6.1ms)[0m   [0mSHOW FIELDS FROM `affiliates`[0m
+
+
+Processing AffiliatesController#new (for 127.0.0.1 at 2009-11-04 21:19:11) [GET]
+  Parameters: {"adapter"=>"_list_inline_adapter"}
+Rendered _form_attribute (1.6ms)
+Rendered _form_attribute (0.5ms)
+Rendered _form_attribute (0.4ms)
+Rendered _form (9.7ms)
+Rendered _create_form (17.7ms)
+Rendered _messages (1.1ms)
+Rendered _list_inline_adapter (6.7ms)
+Completed in 48ms (View: 9, DB: 0) | 200 OK [http://localhost/affiliates/new?_method=get&adapter=_list_inline_adapter]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mAffiliate Columns (7.5ms)[0m   [0;1mSHOW FIELDS FROM `affiliates`[0m
+
+
+Processing AffiliatesController#create (for 127.0.0.1 at 2009-11-04 21:19:16) [POST]
+  Parameters: {"commit"=>"Create", "iframe"=>"true", "authenticity_token"=>"lZRRyJUpnR5hHh+D0pqR1+AwDt8sDz+rtheVC2JtuxA=", "record"=>{"name"=>"sadsadsa", "website"=>"dsadsadsa", "data"=>#<File:/var/folders/SG/SGUwYks8FY4HFKrHUsS94k+++TI/-Tmp-/RackMultipart.3711.0>}}
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+[paperclip] An error was received while processing: #<Paperclip::NotIdentifiedByImageMagickError: /var/folders/SG/SGUwYks8FY4HFKrHUsS94k+++TI/-Tmp-/stream.3711.0 is not recognized by the 'identify' command.>
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCOMMIT[0m
+Rendering form_messages_on_create
+Rendered _messages (1.0ms)
+Rendered _form_messages (6.6ms)
+Completed in 280ms (View: 1, DB: 0) | 200 OK [http://localhost/affiliates?iframe=true]
+ActiveScaffold: extending RESTful routes for affiliates
+  [4;36;1mSQL (244.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (31.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mAffiliate Columns (318.6ms)[0m   [0;1mSHOW FIELDS FROM `affiliates`[0m
+
+
+Processing AffiliatesController#index (for 127.0.0.1 at 2009-11-04 22:03:37) [GET]
+  [4;35;1mSQL (92.6ms)[0m   [0mSELECT count(*) AS count_all FROM `affiliates` [0m
+  [4;36;1mAffiliate Load (0.5ms)[0m   [0;1mSELECT `affiliates`.* FROM `affiliates` ORDER BY affiliates.`id` ASC LIMIT 0, 15[0m
+Rendering template within layouts/admin
+Rendering list
+Rendered _list_header (42.3ms)
+Rendered _list_column_headings (9.7ms)
+Rendered _messages (2.6ms)
+Rendered _list_actions (9.7ms)
+Rendered _list_record (21.1ms)
+Rendered _list (135.9ms)
+Completed in 509ms (View: 324, DB: 688) | 200 OK [http://localhost/affiliates]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-04 22:03:38) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/lightbox.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mAffiliate Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `affiliates`[0m
+
+
+Processing AffiliatesController#new (for 127.0.0.1 at 2009-11-04 22:03:41) [GET]
+  Parameters: {"adapter"=>"_list_inline_adapter"}
+Rendered _form_attribute (1.7ms)
+Rendered _form_attribute (0.5ms)
+Rendered _form_attribute (0.5ms)
+Rendered _form (9.3ms)
+Rendered _create_form (27.5ms)
+Rendered _messages (0.8ms)
+Rendered _list_inline_adapter (5.1ms)
+Completed in 52ms (View: 8, DB: 0) | 200 OK [http://localhost/affiliates/new?_method=get&adapter=_list_inline_adapter]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mAffiliate Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `affiliates`[0m
+
+
+Processing AffiliatesController#create (for 127.0.0.1 at 2009-11-04 22:03:52) [POST]
+  Parameters: {"commit"=>"Create", "iframe"=>"true", "authenticity_token"=>"gNx2OdA2X5LNCY14CQ4GL2H4ub5nz9z5FoCzKeyxMVY=", "record"=>{"name"=>"lkj", "website"=>"hfgc", "data"=>#<File:/var/folders/SG/SGUwYks8FY4HFKrHUsS94k+++TI/-Tmp-/RackMultipart.58367.0>}}
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+[paperclip] An error was received while processing: #<Paperclip::NotIdentifiedByImageMagickError: /var/folders/SG/SGUwYks8FY4HFKrHUsS94k+++TI/-Tmp-/stream.58367.0 is not recognized by the 'identify' command.>
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+Rendering form_messages_on_create
+Rendered _messages (1.2ms)
+Rendered _form_messages (7.5ms)
+Completed in 412ms (View: 1, DB: 0) | 200 OK [http://localhost/affiliates?iframe=true]

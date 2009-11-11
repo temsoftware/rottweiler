@@ -1610,3 +1610,945 @@ Processing AffiliatesController#row (for 127.0.0.1 at 2009-11-05 00:21:21) [GET]
 Rendered _list_actions (2.7ms)
 Rendered _list_record (11.1ms)
 Completed in 30ms (View: 27, DB: 2) | 200 OK [http://localhost/affiliates/4/row?_method=get&iframe=true]
+ActiveScaffold: extending RESTful routes for affiliates
+/!\ FAILSAFE /!\  Sat Nov 07 14:15:02 -0200 2009
+  Status: 500 Internal Server Error
+  Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2)
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/mysql_adapter.rb:576:in `real_connect'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/mysql_adapter.rb:576:in `connect'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/mysql_adapter.rb:204:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/mysql_adapter.rb:76:in `new'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/mysql_adapter.rb:76:in `mysql_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:9:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:28:in `call'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.3/lib/action_controller/params_parser.rb:15:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.3/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.3/lib/action_controller/reloader.rb:29:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.3/lib/action_controller/failsafe.rb:26:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:106:in `call'
+    /Users/alisonasoo/.gem/ruby/1.8/gems/rails-2.3.3/lib/rails/rack/static.rb:31:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+    /Users/alisonasoo/.gem/ruby/1.8/gems/rails-2.3.3/lib/rails/rack/log_tailer.rb:17:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+    /Users/alisonasoo/.gem/ruby/1.8/gems/rails-2.3.3/lib/commands/server.rb:111
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+/!\ FAILSAFE /!\  Sat Nov 07 14:15:19 -0200 2009
+  Status: 500 Internal Server Error
+  Unknown database 'rottweiler_development'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/mysql_adapter.rb:576:in `real_connect'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/mysql_adapter.rb:576:in `connect'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/mysql_adapter.rb:204:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/mysql_adapter.rb:76:in `new'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/mysql_adapter.rb:76:in `mysql_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:9:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:28:in `call'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.3/lib/action_controller/params_parser.rb:15:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.3/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.3/lib/action_controller/reloader.rb:29:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.3/lib/action_controller/failsafe.rb:26:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:106:in `call'
+    /Users/alisonasoo/.gem/ruby/1.8/gems/rails-2.3.3/lib/rails/rack/static.rb:31:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+    /Users/alisonasoo/.gem/ruby/1.8/gems/rails-2.3.3/lib/rails/rack/log_tailer.rb:17:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+    /Users/alisonasoo/.gem/ruby/1.8/gems/rails-2.3.3/lib/commands/server.rb:111
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+/!\ FAILSAFE /!\  Sat Nov 07 14:15:21 -0200 2009
+  Status: 500 Internal Server Error
+  Unknown database 'rottweiler_development'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/mysql_adapter.rb:576:in `real_connect'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/mysql_adapter.rb:576:in `connect'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/mysql_adapter.rb:204:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/mysql_adapter.rb:76:in `new'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/mysql_adapter.rb:76:in `mysql_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:9:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:28:in `call'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.3/lib/action_controller/params_parser.rb:15:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.3/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.3/lib/action_controller/reloader.rb:29:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.3/lib/action_controller/failsafe.rb:26:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:106:in `call'
+    /Users/alisonasoo/.gem/ruby/1.8/gems/rails-2.3.3/lib/rails/rack/static.rb:31:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+    /Users/alisonasoo/.gem/ruby/1.8/gems/rails-2.3.3/lib/rails/rack/log_tailer.rb:17:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+    /Users/alisonasoo/.gem/ruby/1.8/gems/rails-2.3.3/lib/commands/server.rb:111
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+ActiveScaffold: extending RESTful routes for affiliates
+/!\ FAILSAFE /!\  Sat Nov 07 14:15:40 -0200 2009
+  Status: 500 Internal Server Error
+  Unknown database 'rottweiler_development'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/mysql_adapter.rb:576:in `real_connect'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/mysql_adapter.rb:576:in `connect'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/mysql_adapter.rb:204:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/mysql_adapter.rb:76:in `new'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/mysql_adapter.rb:76:in `mysql_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:9:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:28:in `call'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.3/lib/action_controller/params_parser.rb:15:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.3/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.3/lib/action_controller/reloader.rb:29:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.3/lib/action_controller/failsafe.rb:26:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:106:in `call'
+    /Users/alisonasoo/.gem/ruby/1.8/gems/rails-2.3.3/lib/rails/rack/static.rb:31:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+    /Users/alisonasoo/.gem/ruby/1.8/gems/rails-2.3.3/lib/rails/rack/log_tailer.rb:17:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+    /Users/alisonasoo/.gem/ruby/1.8/gems/rails-2.3.3/lib/commands/server.rb:111
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+ActiveScaffold: extending RESTful routes for affiliates
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (83.5ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (280.3ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (7.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (7.7ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateAffiliates (20091104222806)
+  [4;35;1mSQL (91.1ms)[0m   [0mCREATE TABLE `affiliates` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `website` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (4.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20091104222806')[0m
+Migrating to AddAttachmentsDataToAffiliate (20091104222942)
+  [4;35;1mSQL (93.4ms)[0m   [0mALTER TABLE `affiliates` ADD `data_file_name` varchar(255)[0m
+  [4;36;1mSQL (152.1ms)[0m   [0;1mALTER TABLE `affiliates` ADD `data_content_type` varchar(255)[0m
+  [4;35;1mSQL (130.3ms)[0m   [0mALTER TABLE `affiliates` ADD `data_file_size` int(11)[0m
+  [4;36;1mSQL (109.6ms)[0m   [0;1mALTER TABLE `affiliates` ADD `data_updated_at` datetime[0m
+  [4;35;1mSQL (6.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091104222942')[0m
+  [4;36;1mSQL (19.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (11.9ms)[0m   [0mSHOW FIELDS FROM `affiliates`[0m
+  [4;36;1mSQL (28.1ms)[0m   [0;1mdescribe `affiliates`[0m
+  [4;35;1mSQL (3.4ms)[0m   [0mSHOW KEYS FROM `affiliates`[0m
+ActiveScaffold: extending RESTful routes for affiliates
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mAffiliate Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `affiliates`[0m
+
+
+Processing AffiliatesController#index (for 127.0.0.1 at 2009-11-07 14:17:33) [GET]
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `affiliates` [0m
+  [4;36;1mAffiliate Load (0.4ms)[0m   [0;1mSELECT `affiliates`.* FROM `affiliates` ORDER BY affiliates.`id` ASC LIMIT 0, 15[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT `affiliates`.* FROM `affiliates` ORDER BY affiliates.`id` ASC LIMIT 0, 15[0m
+Rendering template within layouts/admin
+Rendering list
+Rendered _list_header (32.0ms)
+Rendered _list_column_headings (6.0ms)
+Rendered _messages (1.3ms)
+Rendered _list (120.0ms)
+Completed in 424ms (View: 332, DB: 3) | 200 OK [http://localhost/affiliates]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-07 14:17:34) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/lightbox.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mAffiliate Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `affiliates`[0m
+
+
+Processing AffiliatesController#new (for 127.0.0.1 at 2009-11-07 14:17:36) [GET]
+  Parameters: {"adapter"=>"_list_inline_adapter"}
+Rendered _form_attribute (15.4ms)
+Rendered _form_attribute (0.8ms)
+Rendered _form_attribute (0.5ms)
+Rendered _form (24.9ms)
+Rendered _create_form (55.3ms)
+Rendered _messages (1.0ms)
+Rendered _list_inline_adapter (7.9ms)
+Completed in 85ms (View: 11, DB: 0) | 200 OK [http://localhost/affiliates/new?_method=get&adapter=_list_inline_adapter]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mAffiliate Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `affiliates`[0m
+
+
+Processing AffiliatesController#create (for 127.0.0.1 at 2009-11-07 14:18:48) [POST]
+  Parameters: {"commit"=>"Create", "iframe"=>"true", "authenticity_token"=>"2ODcfXosjfRiGHKmNWTV6V4NdkAQGEow/97H9iwpVaI=", "record"=>{"name"=>"Alison", "website"=>"www.alisonrails.com", "data"=>#<File:/var/folders/SG/SGUwYks8FY4HFKrHUsS94k+++TI/-Tmp-/RackMultipart.2159.0>}}
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mAffiliate Create (0.4ms)[0m   [0mINSERT INTO `affiliates` (`name`, `updated_at`, `data_updated_at`, `data_file_name`, `data_content_type`, `data_file_size`, `website`, `created_at`) VALUES('Alison', '2009-11-07 16:18:50', '2009-11-07 16:18:48', '1440x900.jpg', 'image/jpeg', 17599, 'www.alisonrails.com', '2009-11-07 16:18:50')[0m
+[paperclip] Saving attachments.
+[paperclip] saving /Users/alisonasoo/Sites/rottweiler/public/uploads/affiliates/1:/1_originals.jpg
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCOMMIT[0m
+Rendering on_create
+Rendered _list_actions (3.9ms)
+Rendered _list_record (16.2ms)
+Rendered _messages (0.9ms)
+Completed in 2082ms (View: 1, DB: 0) | 200 OK [http://localhost/affiliates?iframe=true]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mAffiliate Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `affiliates`[0m
+
+
+Processing AffiliatesController#show (for 127.0.0.1 at 2009-11-07 14:31:54) [GET]
+  Parameters: {"iframe"=>"true", "adapter"=>"_list_inline_adapter", "id"=>"1"}
+  [4;36;1mAffiliate Load (0.6ms)[0m   [0;1mSELECT * FROM `affiliates` WHERE (`affiliates`.`id` = 1) [0m
+Rendered _show_columns (13.6ms)
+Rendered _show (72.8ms)
+Rendered _messages (1.4ms)
+Rendered _list_inline_adapter (8.4ms)
+Completed in 107ms (View: 12, DB: 0) | 200 OK [http://localhost/affiliates/1?_method=get&iframe=true&adapter=_list_inline_adapter]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mAffiliate Columns (7.4ms)[0m   [0mSHOW FIELDS FROM `affiliates`[0m
+
+
+Processing AffiliatesController#row (for 127.0.0.1 at 2009-11-07 14:31:59) [GET]
+  Parameters: {"iframe"=>"true", "id"=>"1"}
+  [4;36;1mAffiliate Load (0.4ms)[0m   [0;1mSELECT * FROM `affiliates` WHERE (`affiliates`.`id` = 1) [0m
+Rendered _list_actions (2.9ms)
+Rendered _list_record (19.8ms)
+Completed in 40ms (View: 37, DB: 8) | 200 OK [http://localhost/affiliates/1/row?_method=get&iframe=true]
+ActiveScaffold: extending RESTful routes for affiliates
+ActiveScaffold: extending RESTful routes for affiliates
+ActiveScaffold: extending RESTful routes for affiliates
+  [4;36;1mSQL (30.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (23.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (22.9ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateAffiliates (20091104222806)
+Migrating to AddAttachmentsDataToAffiliate (20091104222942)
+Migrating to CreateHomeInfos (20091111175635)
+  [4;36;1mSQL (77.9ms)[0m   [0;1mCREATE TABLE `home_infos` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `text` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091111175635')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (55.7ms)[0m   [0mSHOW FIELDS FROM `affiliates`[0m
+  [4;36;1mSQL (14.1ms)[0m   [0;1mdescribe `affiliates`[0m
+  [4;35;1mSQL (7.7ms)[0m   [0mSHOW KEYS FROM `affiliates`[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mSHOW FIELDS FROM `home_infos`[0m
+  [4;35;1mSQL (26.0ms)[0m   [0mdescribe `home_infos`[0m
+  [4;36;1mSQL (20.4ms)[0m   [0;1mSHOW KEYS FROM `home_infos`[0m
+ActiveScaffold: extending RESTful routes for affiliates
+ActiveScaffold: extending RESTful routes for affiliates
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-11 16:02:28) [GET]
+
+ActionController::RoutingError (No route matches "/home_info" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+ActiveScaffold: extending RESTful routes for affiliates
+  [4;36;1mSQL (30.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-11 16:10:48) [GET]
+
+ActionController::RoutingError (No route matches "/home_info" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mHomeInfo Columns (59.8ms)[0m   [0;1mSHOW FIELDS FROM `home_infos`[0m
+
+
+Processing HomeInfosController#index (for 127.0.0.1 at 2009-11-11 16:10:55) [GET]
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM `home_infos` [0m
+  [4;36;1mHomeInfo Load (0.3ms)[0m   [0;1mSELECT `home_infos`.* FROM `home_infos` ORDER BY home_infos.`id` ASC LIMIT 0, 15[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT `home_infos`.* FROM `home_infos` ORDER BY home_infos.`id` ASC LIMIT 0, 15[0m
+Rendering template within layouts/admin
+Rendering list
+Rendered _list_header (78.3ms)
+Rendered _list_column_headings (4.8ms)
+Rendered _messages (1.4ms)
+Rendered _list (15.8ms)
+Completed in 285ms (View: 209, DB: 61) | 200 OK [http://localhost/home_infos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-11 16:10:56) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/lightbox.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mHomeInfo Columns (20.7ms)[0m   [0;1mSHOW FIELDS FROM `home_infos`[0m
+
+
+Processing HomeInfosController#new (for 127.0.0.1 at 2009-11-11 16:11:50) [GET]
+  Parameters: {"adapter"=>"_list_inline_adapter"}
+Rendered _form_attribute (2.0ms)
+Rendered _form_attribute (0.6ms)
+Rendered _form (9.1ms)
+Rendered _create_form (418.2ms)
+Rendered _messages (0.9ms)
+Rendered _list_inline_adapter (8.5ms)
+Completed in 449ms (View: 11, DB: 0) | 200 OK [http://localhost/home_infos/new?_method=get&adapter=_list_inline_adapter]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mHomeInfo Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `home_infos`[0m
+
+
+Processing HomeInfosController#create (for 127.0.0.1 at 2009-11-11 16:12:18) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"K7I8cwDG6meEvXTkgA1NIKX4Qjb0hoGJAQPCVZxK0V8=", "_"=>"", "record"=>{"name"=>"Automóveis", "text"=>"bla bla bla"}}
+  [4;36;1mSQL (2.8ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mHomeInfo Create (0.4ms)[0m   [0mINSERT INTO `home_infos` (`name`, `updated_at`, `text`, `created_at`) VALUES('Automóveis', '2009-11-11 18:12:18', 'bla bla bla', '2009-11-11 18:12:18')[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mCOMMIT[0m
+Rendering on_create
+Rendered _list_actions (3.8ms)
+Rendered _list_record (14.1ms)
+Rendered _messages (1.0ms)
+Completed in 84ms (View: 74, DB: 8) | 200 OK [http://localhost/home_infos/create]
+ActiveScaffold: extending RESTful routes for affiliates
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mHomeInfo Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `home_infos`[0m
+
+
+Processing HomeInfosController#index (for 127.0.0.1 at 2009-11-11 16:16:48) [GET]
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `home_infos` [0m
+  [4;36;1mHomeInfo Load (0.4ms)[0m   [0;1mSELECT `home_infos`.* FROM `home_infos` ORDER BY home_infos.`id` ASC LIMIT 0, 15[0m
+Rendering template within layouts/admin
+Rendering list
+Rendered _list_header (25.1ms)
+Rendered _list_column_headings (4.5ms)
+Rendered _messages (6.1ms)
+Rendered _list_actions (4.8ms)
+Rendered _list_record (11.2ms)
+Rendered _list (116.3ms)
+Completed in 192ms (View: 179, DB: 3) | 200 OK [http://localhost/home_infos]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-11 16:16:49) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/lightbox.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mHomeInfo Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `home_infos`[0m
+
+
+Processing HomeInfosController#new (for 127.0.0.1 at 2009-11-11 16:16:53) [GET]
+  Parameters: {"adapter"=>"_list_inline_adapter"}
+Rendered _form_attribute (1.4ms)
+Rendered _form_attribute (0.5ms)
+Rendered _form (7.1ms)
+Rendered _create_form (14.3ms)
+Rendered _messages (0.9ms)
+Rendered _list_inline_adapter (4.9ms)
+Completed in 38ms (View: 7, DB: 0) | 200 OK [http://localhost/home_infos/new?_method=get&adapter=_list_inline_adapter]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mHomeInfo Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `home_infos`[0m
+
+
+Processing HomeInfosController#index (for 127.0.0.1 at 2009-11-11 16:17:40) [GET]
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `home_infos` [0m
+  [4;36;1mHomeInfo Load (0.2ms)[0m   [0;1mSELECT `home_infos`.* FROM `home_infos` ORDER BY home_infos.`id` ASC LIMIT 0, 15[0m
+Rendering template within layouts/admin
+Rendering list
+Rendered _list_header (2.4ms)
+Rendered _list_column_headings (3.8ms)
+Rendered _messages (1.0ms)
+Rendered _list_actions (2.5ms)
+Rendered _list_record (8.9ms)
+Rendered _list (26.5ms)
+Completed in 58ms (View: 54, DB: 2) | 200 OK [http://localhost/home_infos]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-11 16:17:40) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/lightbox.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mHomeInfo Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `home_infos`[0m
+
+
+Processing HomeInfosController#new (for 127.0.0.1 at 2009-11-11 16:17:43) [GET]
+  Parameters: {"adapter"=>"_list_inline_adapter"}
+Rendered _form_attribute (1.4ms)
+Rendered _form (5.8ms)
+Rendered _create_form (12.9ms)
+Rendered _messages (0.8ms)
+Rendered _list_inline_adapter (4.8ms)
+Completed in 37ms (View: 7, DB: 0) | 200 OK [http://localhost/home_infos/new?_method=get&adapter=_list_inline_adapter]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mHomeInfo Columns (16.1ms)[0m   [0;1mSHOW FIELDS FROM `home_infos`[0m
+
+
+Processing HomeInfosController#edit (for 127.0.0.1 at 2009-11-11 16:17:59) [GET]
+  Parameters: {"adapter"=>"_list_inline_adapter", "id"=>"1"}
+  [4;35;1mHomeInfo Load (13.0ms)[0m   [0mSELECT * FROM `home_infos` WHERE (`home_infos`.`id` = 1) [0m
+
+ActionView::TemplateError (undefined local variable or method `data' for #<HomeInfo:0x24b8578>) on line #34 of vendor/plugins/active_scaffold/frontends/default/views/_update_form.html.erb:
+31: end
+32: %>
+33: 
+34:   <h4><%= @record.to_label.nil? ? active_scaffold_config.update.label : as_(:update_model, :model => clean_column_value(@record.to_label)) %></h4>
+35: 
+36:   <div id="<%= element_messages_id(:action => :update) %>" class="messages-container">
+37: <% if request.xhr? -%>
+
+    app/models/home_info.rb:3:in `to_label'
+    vendor/plugins/active_scaffold/frontends/default/views/_update_form.html.erb:34
+
+Rendered rescues/_trace (174.6ms)
+Rendered rescues/_request_and_response (1.7ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mHomeInfo Columns (14.0ms)[0m   [0;1mSHOW FIELDS FROM `home_infos`[0m
+
+
+Processing HomeInfosController#show (for 127.0.0.1 at 2009-11-11 16:18:07) [GET]
+  Parameters: {"adapter"=>"_list_inline_adapter", "id"=>"1"}
+  [4;35;1mHomeInfo Load (11.1ms)[0m   [0mSELECT * FROM `home_infos` WHERE (`home_infos`.`id` = 1) [0m
+Rendered _show_columns (7.3ms)
+Rendered _show (15.6ms)
+Rendered _messages (1.0ms)
+Rendered _list_inline_adapter (5.7ms)
+Completed in 55ms (View: 9, DB: 0) | 200 OK [http://localhost/home_infos/show/1?_method=get&adapter=_list_inline_adapter]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mHomeInfo Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `home_infos`[0m
+
+
+Processing HomeInfosController#row (for 127.0.0.1 at 2009-11-11 16:18:10) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mHomeInfo Load (0.8ms)[0m   [0mSELECT * FROM `home_infos` WHERE (`home_infos`.`id` = 1) [0m
+Rendered _list_actions (2.4ms)
+Rendered _list_record (8.4ms)
+Completed in 26ms (View: 23, DB: 3) | 200 OK [http://localhost/home_infos/row/1?_method=get]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mHomeInfo Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `home_infos`[0m
+
+
+Processing HomeInfosController#index (for 127.0.0.1 at 2009-11-11 16:18:15) [GET]
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `home_infos` [0m
+  [4;36;1mHomeInfo Load (0.2ms)[0m   [0;1mSELECT `home_infos`.* FROM `home_infos` ORDER BY home_infos.`id` ASC LIMIT 0, 15[0m
+Rendering template within layouts/admin
+Rendering list
+Rendered _list_header (2.3ms)
+Rendered _list_column_headings (3.8ms)
+Rendered _messages (0.9ms)
+Rendered _list_actions (2.2ms)
+Rendered _list_record (7.6ms)
+Rendered _list (22.2ms)
+Completed in 52ms (View: 48, DB: 2) | 200 OK [http://localhost/home_infos]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-11 16:18:15) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/lightbox.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mHomeInfo Columns (11.4ms)[0m   [0mSHOW FIELDS FROM `home_infos`[0m
+
+
+Processing HomeInfosController#edit (for 127.0.0.1 at 2009-11-11 16:18:16) [GET]
+  Parameters: {"adapter"=>"_list_inline_adapter", "id"=>"1"}
+  [4;36;1mHomeInfo Load (11.0ms)[0m   [0;1mSELECT * FROM `home_infos` WHERE (`home_infos`.`id` = 1) [0m
+
+ActionView::TemplateError (undefined local variable or method `data' for #<HomeInfo:0x25e8560>) on line #34 of vendor/plugins/active_scaffold/frontends/default/views/_update_form.html.erb:
+31: end
+32: %>
+33: 
+34:   <h4><%= @record.to_label.nil? ? active_scaffold_config.update.label : as_(:update_model, :model => clean_column_value(@record.to_label)) %></h4>
+35: 
+36:   <div id="<%= element_messages_id(:action => :update) %>" class="messages-container">
+37: <% if request.xhr? -%>
+
+    app/models/home_info.rb:3:in `to_label'
+    vendor/plugins/active_scaffold/frontends/default/views/_update_form.html.erb:34
+
+Rendered rescues/_trace (69.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mHomeInfo Columns (7.3ms)[0m   [0mSHOW FIELDS FROM `home_infos`[0m
+
+
+Processing HomeInfosController#index (for 127.0.0.1 at 2009-11-11 16:19:03) [GET]
+  [4;36;1mSQL (8.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `home_infos` [0m
+  [4;35;1mHomeInfo Load (4.4ms)[0m   [0mSELECT `home_infos`.* FROM `home_infos` ORDER BY home_infos.`id` ASC LIMIT 0, 15[0m
+Rendering template within layouts/admin
+Rendering list
+Rendered _list_header (3.0ms)
+Rendered _list_column_headings (4.0ms)
+Rendered _messages (1.0ms)
+Rendered _list_actions (2.4ms)
+Rendered _list_record (8.2ms)
+Rendered _list (95.9ms)
+Completed in 140ms (View: 123, DB: 20) | 200 OK [http://localhost/home_infos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-11 16:19:03) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/lightbox.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mHomeInfo Columns (60.3ms)[0m   [0;1mSHOW FIELDS FROM `home_infos`[0m
+
+
+Processing HomeInfosController#edit (for 127.0.0.1 at 2009-11-11 16:19:05) [GET]
+  Parameters: {"adapter"=>"_list_inline_adapter", "id"=>"1"}
+  [4;35;1mHomeInfo Load (8.7ms)[0m   [0mSELECT * FROM `home_infos` WHERE (`home_infos`.`id` = 1) [0m
+Rendered _form_attribute (1.6ms)
+Rendered _form_attribute (0.6ms)
+Rendered _form (8.0ms)
+Rendered _update_form (15.2ms)
+Rendered _messages (1.0ms)
+Rendered _list_inline_adapter (5.8ms)
+Completed in 51ms (View: 9, DB: 0) | 200 OK [http://localhost/home_infos/edit/1?_method=get&adapter=_list_inline_adapter]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mHomeInfo Columns (43.4ms)[0m   [0;1mSHOW FIELDS FROM `home_infos`[0m
+
+
+Processing HomeInfosController#row (for 127.0.0.1 at 2009-11-11 16:19:13) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mHomeInfo Load (0.6ms)[0m   [0mSELECT * FROM `home_infos` WHERE (`home_infos`.`id` = 1) [0m
+Rendered _list_actions (6.6ms)
+Rendered _list_record (15.1ms)
+Completed in 38ms (View: 35, DB: 44) | 200 OK [http://localhost/home_infos/row/1?_method=get]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mHomeInfo Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `home_infos`[0m
+
+
+Processing HomeInfosController#index (for 127.0.0.1 at 2009-11-11 16:20:30) [GET]
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM `home_infos` [0m
+  [4;36;1mHomeInfo Load (0.2ms)[0m   [0;1mSELECT `home_infos`.* FROM `home_infos` ORDER BY home_infos.`id` ASC LIMIT 0, 15[0m
+Rendering template within layouts/admin
+Rendering list
+Rendered _list_header (2.4ms)
+Rendered _list_column_headings (3.7ms)
+Rendered _messages (0.9ms)
+Rendered _list_actions (2.4ms)
+Rendered _list_record (8.2ms)
+Rendered _list (92.5ms)
+Completed in 123ms (View: 118, DB: 2) | 200 OK [http://localhost/home_infos]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-11 16:20:31) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/lightbox.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mHomeInfo Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `home_infos`[0m
+
+
+Processing HomeInfosController#index (for 127.0.0.1 at 2009-11-11 16:21:43) [GET]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `home_infos` [0m
+  [4;35;1mHomeInfo Load (0.2ms)[0m   [0mSELECT `home_infos`.* FROM `home_infos` ORDER BY home_infos.`id` ASC LIMIT 0, 15[0m
+Rendering template within layouts/admin
+Rendering list
+Rendered _list_header (2.6ms)
+Rendered _list_column_headings (3.7ms)
+Rendered _messages (1.0ms)
+Rendered _list_actions (2.3ms)
+Rendered _list_record (8.4ms)
+Rendered _list (29.1ms)
+Completed in 77ms (View: 67, DB: 2) | 200 OK [http://localhost/home_infos]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-11 16:21:43) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/lightbox.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+ActiveScaffold: extending RESTful routes for affiliates
+ActiveScaffold: extending RESTful routes for affiliates
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (27.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (20.8ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateAffiliates (20091104222806)
+Migrating to AddAttachmentsDataToAffiliate (20091104222942)
+Migrating to CreateHomeInfos (20091111175635)
+Migrating to CreateProducts (20091111183044)
+  [4;36;1mSQL (107.3ms)[0m   [0;1mCREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `text` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091111183044')[0m
+  [4;36;1mSQL (6.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (3.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (4.6ms)[0m   [0mSHOW FIELDS FROM `affiliates`[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mdescribe `affiliates`[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mSHOW KEYS FROM `affiliates`[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mSHOW FIELDS FROM `home_infos`[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mdescribe `home_infos`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW KEYS FROM `home_infos`[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mdescribe `products`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSHOW KEYS FROM `products`[0m
+ActiveScaffold: extending RESTful routes for affiliates
+ActiveScaffold: extending RESTful routes for affiliates
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-11 16:33:50) [GET]
+
+SyntaxError (/Users/alisonasoo/Sites/rottweiler/app/controllers/products_controller.rb:11: syntax error, unexpected $end, expecting kEND):
+  
+
+Rendered rescues/_trace (31.8ms)
+Rendered rescues/_request_and_response (1.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-11 16:34:17) [GET]
+
+SyntaxError (/Users/alisonasoo/Sites/rottweiler/app/controllers/products_controller.rb:11: syntax error, unexpected $end, expecting kEND):
+  
+
+Rendered rescues/_trace (94.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-11 16:34:19) [GET]
+
+SyntaxError (/Users/alisonasoo/Sites/rottweiler/app/controllers/products_controller.rb:11: syntax error, unexpected $end, expecting kEND):
+  
+
+Rendered rescues/_trace (36.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mProduct Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-11-11 16:35:24) [GET]
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `products` [0m
+  [4;36;1mProduct Load (0.3ms)[0m   [0;1mSELECT `products`.* FROM `products` ORDER BY products.`id` ASC LIMIT 0, 15[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT `products`.* FROM `products` ORDER BY products.`id` ASC LIMIT 0, 15[0m
+Rendering template within layouts/admin
+Rendering list
+Rendered _list_header (11.3ms)
+Rendered _list_column_headings (3.7ms)
+Rendered _messages (0.9ms)
+Rendered _list (13.9ms)
+Completed in 63ms (View: 53, DB: 2) | 200 OK [http://localhost/products]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-11 16:35:24) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/lightbox.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mProduct Columns (11.6ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2009-11-11 16:35:31) [GET]
+  Parameters: {"adapter"=>"_list_inline_adapter"}
+Rendered _form_attribute (1.6ms)
+Rendered _form_attribute (0.5ms)
+Rendered _form (8.0ms)
+Rendered _create_form (16.4ms)
+Rendered _messages (1.1ms)
+Rendered _list_inline_adapter (5.7ms)
+Completed in 46ms (View: 11, DB: 0) | 200 OK [http://localhost/products/new?_method=get&adapter=_list_inline_adapter]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mProduct Columns (7.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+
+
+Processing ProductsController#create (for 127.0.0.1 at 2009-11-11 16:35:33) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"K7I8cwDG6meEvXTkgA1NIKX4Qjb0hoGJAQPCVZxK0V8=", "_"=>"", "record"=>{"name"=>"dsadsa", "text"=>"daddsa"}}
+  [4;36;1mSQL (2.5ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProduct Create (0.3ms)[0m   [0mINSERT INTO `products` (`name`, `updated_at`, `text`, `created_at`) VALUES('dsadsa', '2009-11-11 18:35:33', 'daddsa', '2009-11-11 18:35:33')[0m
+  [4;36;1mSQL (4.3ms)[0m   [0;1mCOMMIT[0m
+Rendering on_create
+Rendered _list_actions (4.2ms)
+Rendered _list_record (11.1ms)
+Rendered _messages (0.9ms)
+Completed in 57ms (View: 44, DB: 14) | 200 OK [http://localhost/products/create]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mProduct Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+
+
+Processing ProductsController#edit (for 127.0.0.1 at 2009-11-11 16:35:35) [GET]
+  Parameters: {"adapter"=>"_list_inline_adapter", "id"=>"1", "_"=>""}
+  [4;36;1mProduct Load (0.8ms)[0m   [0;1mSELECT * FROM `products` WHERE (`products`.`id` = 1) [0m
+Rendered _form_attribute (1.8ms)
+Rendered _form_attribute (0.5ms)
+Rendered _form (8.8ms)
+Rendered _update_form (19.3ms)
+Rendered _messages (3.6ms)
+Rendered _list_inline_adapter (93.8ms)
+Completed in 138ms (View: 97, DB: 0) | 200 OK [http://localhost/products/edit/1?_=&_method=get&adapter=_list_inline_adapter]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mProduct Columns (12.5ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+
+
+Processing ProductsController#update (for 127.0.0.1 at 2009-11-11 16:35:38) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"K7I8cwDG6meEvXTkgA1NIKX4Qjb0hoGJAQPCVZxK0V8=", "id"=>"1", "_"=>"", "record"=>{"name"=>"dsadsa", "text"=>"daddsadasdsa"}}
+  [4;36;1mProduct Load (8.5ms)[0m   [0;1mSELECT * FROM `products` WHERE (`products`.`id` = 1) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mProduct Update (0.4ms)[0m   [0;1mUPDATE `products` SET `text` = 'daddsadasdsa', `updated_at` = '2009-11-11 18:35:38' WHERE `id` = 1[0m
+  [4;35;1mSQL (9.9ms)[0m   [0mCOMMIT[0m
+Rendering on_update
+Rendered _messages (1.0ms)
+Completed in 63ms (View: 39, DB: 32) | 200 OK [http://localhost/products/update/1?_=]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mProduct Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+
+
+Processing ProductsController#row (for 127.0.0.1 at 2009-11-11 16:35:38) [GET]
+  Parameters: {"id"=>"1", "_"=>""}
+  [4;35;1mProduct Load (2.5ms)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 1) [0m
+Rendered _list_actions (2.8ms)
+Rendered _list_record (12.2ms)
+Completed in 35ms (View: 30, DB: 5) | 200 OK [http://localhost/products/row/1?_=&_method=get]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mProduct Columns (5.2ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+
+
+Processing ProductsController#show (for 127.0.0.1 at 2009-11-11 16:35:43) [GET]
+  Parameters: {"adapter"=>"_list_inline_adapter", "id"=>"1", "_"=>""}
+  [4;35;1mProduct Load (6.1ms)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 1) [0m
+Rendered _show_columns (1.8ms)
+Rendered _show (13.9ms)
+Rendered _messages (1.0ms)
+Rendered _list_inline_adapter (5.4ms)
+Completed in 50ms (View: 8, DB: 0) | 200 OK [http://localhost/products/show/1?_=&_method=get&adapter=_list_inline_adapter]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mProduct Columns (6.5ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+
+
+Processing ProductsController#row (for 127.0.0.1 at 2009-11-11 16:35:46) [GET]
+  Parameters: {"id"=>"1", "_"=>""}
+  [4;35;1mProduct Load (0.4ms)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 1) [0m
+Rendered _list_actions (2.6ms)
+Rendered _list_record (9.8ms)
+Completed in 29ms (View: 24, DB: 7) | 200 OK [http://localhost/products/row/1?_=&_method=get]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mProduct Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+
+
+Processing ProductsController#destroy (for 127.0.0.1 at 2009-11-11 16:35:49) [DELETE]
+  Parameters: {"authenticity_token"=>"K7I8cwDG6meEvXTkgA1NIKX4Qjb0hoGJAQPCVZxK0V8=", "id"=>"1", "_"=>""}
+  [4;35;1mProduct Load (0.4ms)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProduct Destroy (0.2ms)[0m   [0mDELETE FROM `products` WHERE `id` = 1[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+Rendering destroy
+Rendered _messages (0.9ms)
+Completed in 100ms (View: 94, DB: 3) | 200 OK [http://localhost/products/destroy/1?_=&_method=delete&authenticity_token=K7I8cwDG6meEvXTkgA1NIKX4Qjb0hoGJAQPCVZxK0V8%3D]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mProduct Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+
+
+Processing ProductsController#update_table (for 127.0.0.1 at 2009-11-11 16:35:49) [GET]
+  Parameters: {"page"=>"1", "_"=>""}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `products` [0m
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT `products`.* FROM `products` ORDER BY products.`id` ASC LIMIT 0, 15[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT `products`.* FROM `products` ORDER BY products.`id` ASC LIMIT 0, 15[0m
+Rendered _list_column_headings (3.9ms)
+Rendered _messages (0.9ms)
+Rendered _list (12.9ms)
+Completed in 32ms (View: 28, DB: 2) | 200 OK [http://localhost/products/update_table?_=&page=1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mProduct Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2009-11-11 16:36:09) [GET]
+  Parameters: {"adapter"=>"_list_inline_adapter"}
+Rendered _form_attribute (2.8ms)
+Rendered _form_attribute (0.4ms)
+Rendered _form (9.2ms)
+Rendered _create_form (17.2ms)
+Rendered _messages (1.0ms)
+Rendered _list_inline_adapter (6.7ms)
+Completed in 50ms (View: 12, DB: 0) | 200 OK [http://localhost/products/new?_method=get&adapter=_list_inline_adapter]

@@ -7,7 +7,13 @@ body{
 	background-color:#ffffff;
 	background-image:url(../images/fundo_pag.gif);
 	background-repeat:repeat-y;
+
 }
+
+#box_all{
+	margin: 0 auto;
+}
+
 #img_top{
 	position:absolute;
 	left:84px;
@@ -71,6 +77,9 @@ body{
 	left:120px;
 	margin-left:0;
 	top:31px;
+	overflow:hidden;
+	display:box;
+	height:78px;
 }
 .saiba_mais{
 	position:absolute;

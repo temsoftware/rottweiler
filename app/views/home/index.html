@@ -1,13 +1,14 @@
+<div id="tipos_seguros">
 <% for home_info in @home_info %>
 
-<div id="tipos_seguros">
-    <div id="tipo_seguros_automovel" class="tipo_seguros_box">
+
+    <div id="tipo_seguros_<%=home_info.name%>" class="tipo_seguros_box">
         <span id="titulo_aut" class="tipo_seg_titulo"><%= home_info.name %></span>
         <span id="img_tupo_seg" class="img_tipo_seg">
-            <img src="../images/seguro_automovel.jpg">
+            <img src="../images/seguro_<%= home_info.name%>.jpg">
         </span>
-        <span id="tipo_seg_desc_aut" class="tipo_seg_desc"><%= home_info.text %></span>
+        <span id="tipo_seg_desc_aut" class="tipo_seg_desc"><%= home_info.text %>...</span>
         <span id="saiba_mais" class="saiba_mais"><a href="">Saiba Mais</a></span>
     </div>
 <% end %>
-
+</div>

@@ -1,0 +1,2 @@
+module InsuranceBusinessAdminHelper
+end

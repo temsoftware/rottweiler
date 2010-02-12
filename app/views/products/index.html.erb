@@ -1,0 +1,36 @@
+<div id="seguros_empresariais">
+  <span id="seg_emp_titulo" >
+    <img src="<%=@img_titulo_esq%>">
+  </span>
+
+  <span id="seg_emp_assunto">
+
+  </span>
+
+  <span id="seg_emp_barra">
+    <img src="../images/seg_emp_barra_assunto.jpg">
+  </span>
+
+  <span id="seg_emp_menu">
+    <ul>
+      <% for item in @insurance_business %>
+        <li><%= link_to item.name , seguros_path(:id => item)%></li>
+      <% end %>
+    </ul>
+  </span>
+
+  <span id="seg_emp_img_titulo">
+    <img src="<%= @insurance_show.img_titulo%>">
+  </span>
+
+  <span id="seg_emp_conteudo" class="<%= @insurance_show.span_name_id%>">
+     	<span id="seg_emp_conteudo_opcoes">
+     		<p><%= simple_format(@insurance_show.description)%></p>
+      </span>
+	</span>
+
+	<%content_for :insurances_box do%>
+    <%=render :partial => "layouts/tipos_seguros", :locals => {:var => 2 , :div_name => "seg_emp_tipos_seguros"}%>
+  <%end%>
+</div>
+

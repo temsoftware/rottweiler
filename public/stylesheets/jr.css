@@ -1,0 +1,696 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	background-color:#ffffff;
+	background-image:url(../images/fundo_pag.gif);
+	background-repeat:repeat-y;
+}
+#img_top{
+	position:absolute;
+	left:84px;
+	top:0px;
+}
+#topo{
+	position:relative;
+}
+#conteudo{
+	position:relative;
+	width:935px;
+}
+#menu_esquerda img{
+	position:relative;
+	margin-bottom:0px;
+}
+#img_tipos_seguros{
+	position:absolute;
+	float:right;
+	right:30px;
+	_right:30px;
+	top:210px;
+	z-index:1;
+}
+#tipos_seguros{
+	position:absolute;
+	float:right;
+	right:30px;
+	_right:30px;
+	top:460px;
+	width:620px;
+	height:304px;
+}
+.tipo_seguros_box{
+	position:relative;
+	width:300px;
+	height:140px;
+	background:#eae8e8;
+	float:left;
+	margin:5px;
+}
+.img_tipo_seg{
+	position:absolute;
+	left:8px;
+	top:40px;
+}
+.tipo_seg_titulo{
+	position:absolute;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:23px;
+	color:#4b4b4b;
+	font-weight:bold;
+	margin-left:10px;
+	margin-top:5px;
+}
+.tipo_seg_desc{
+	position:absolute;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:10px;
+	color:#4b4b4b;
+	margin-left:10px;
+	margin-top:5px;
+	left:120px;
+	margin-left:0;
+	top:31px;
+}
+.saiba_mais{
+	position:absolute;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:10px;
+	color:#4b4b4b;
+	font-weight:bold;
+	margin-left:235px;
+	margin-top:125px;
+}
+.saiba_mais a{
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:10px;
+	color:#4b4b4b;
+	font-weight:bold;
+
+}
+.saiba_mais a:hover{
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:10px;
+	color:#4b4b4b;
+	font-weight:bold;
+}
+/*MENU ESQUERDA INICIO*/
+#menu_esquerda{
+	position:absolute;
+	float:left;
+	left:108px;
+	top:200px;
+	width:160px;
+	height:30px;
+}
+.menu_img{
+	margin:0;
+	padding:0;
+}
+.menu_img_home {
+	padding-left:10px;
+	background-image:url(../images/menu_fatiado_02.gif);
+	display:block;
+	height:29px;
+	padding-left:0;
+}
+.menu_img_home:hover {
+	padding-left:10px;
+	background-image:url(../images/menu_fatiado_hover_02.gif);
+	display:block;
+	height:29px;
+	padding-left:0;
+}
+.menu_img_home:active{
+	background-image:url(../images/menu_fatiado_hover_02.gif);
+}
+.menu_img_quem_somos {
+	padding-left:10px;
+	background-image:url(../images/menu_fatiado_03.gif);
+	display:block;
+	height:43px;
+	padding-left:0;
+}
+.menu_img_quem_somos:hover {
+	padding-left:10px;
+	background-image:url(../images/menu_fatiado_hover_03.gif);
+	display:block;
+	height:43px;
+	padding-left:0;
+}
+
+.menu_img_produtos {
+	padding-left:10px;
+	background-image:url(../images/menu_fatiado_04.gif);
+	display:block;
+	height:36px;
+	padding-left:0;
+}
+#menu_esquerda_img_produto ul{
+    display:none;
+    left:152px;
+    position:absolute;
+    top:110px;
+    z-index:2;
+    border-bottom: 1px solid #ccc;
+}
+#menu_esquerda_img_produto ul li {
+	display: block;
+	text-decoration: none;
+	color: #777;
+	background: #fff;
+	padding: 5px;
+	border: 1px solid #ccc;
+	border-bottom: 0;
+}
+
+#menu_esquerda_img_produto ul li a{
+    text-decoration: none;
+	color: #777;
+}
+
+#menu_esquerda_img_produto ul li a:hover{
+    text-decoration: none;
+	color: #4B4B4B;
+}
+
+
+#menu_esquerda_img_produto:hover ul{
+    display: block;
+}
+
+/* INICIO Para Configurar o menu corretamente no ie*/
+html ul li {
+    float: left;
+}
+html ul li a {
+    height: 1%;
+}
+/* FIM Para Configurar o menu corretamente no ie*/
+
+.menu_img_produtos:hover {
+	padding-left:10px;
+	background-image:url(../images/menu_fatiado_hover_04.gif);
+	display:block;
+	height:36px;
+	padding-left:0;
+}
+.menu_img_seguradora {
+	padding-left:10px;
+	background-image:url(../images/menu_fatiado_05.gif);
+	display:block;
+	height:37px;
+	padding-left:0;
+}
+.menu_img_seguradora:hover {
+	padding-left:10px;
+	background-image:url(../images/menu_fatiado_hover_05.gif);
+	display:block;
+	height:37px;
+	padding-left:0;
+}
+.menu_img_cotacao {
+	padding-left:10px;
+	background-image:url(../images/menu_fatiado_06.gif);
+	display:block;
+	height:38px;
+	padding-left:0;
+}
+.menu_img_cotacao:hover {
+	padding-left:10px;
+	background-image:url(../images/menu_fatiado_hover_06.gif);
+	display:block;
+	height:38px;
+	padding-left:0;
+}
+.menu_img_contato {
+	padding-left:10px;
+	background-image:url(../images/menu_fatiado_07.gif);
+	display:block;
+	height:41px;
+	padding-left:0;
+}
+.menu_img_contato:hover {
+	padding-left:10px;
+	background-image:url(../images/menu_fatiado_hover_07.gif);
+	display:block;
+	height:41px;
+	padding-left:0;
+}
+.menu_img_localizacao {
+	padding-left:10px;
+	background-image:url(../images/menu_fatiado_08.gif);
+	display:block;
+	height:30px;
+	padding-left:0;
+}
+.menu_img_localizacao:hover {
+	padding-left:10px;
+	background-image:url(../images/menu_fatiado_hover_08.gif);
+	display:block;
+	height:30px;
+	padding-left:0;
+}
+/*MENU ESQUERDA FIM*/
+
+/*MENU IMG SEGURADORAS INICIO*/
+
+#menu_img_seguradoras{
+	float:left;
+	left:108px;
+	position:absolute;
+	top:525px;
+	width:160px;
+}
+#menu_img_seguradora_titulo{
+	display:block;
+	padding-left:0;
+	position:relative;
+	width:100%;
+}
+#menu_img_seguradora_logos{
+	position:relative;
+	top:5px;
+}
+/*MENU IMG SEGURADORAS FIM*/
+
+/*MENU IMG PARCEIROS INICIO*/
+#menu_img_parceiros{
+	float:left;
+	left:108px;
+	position:absolute;
+	top:685px;
+	width:160px;
+}
+#menu_img_parceiro_titulo{
+	display:block;
+	padding-left:0;
+	position:relative;
+	width:100%;
+}
+#menu_img_parceiro_logos{
+	position:relative;
+	top:5px;
+}
+/*MENU IMG PARCEIROS FIM*/
+#rodape
+{
+	background-image:url(../images/rodape.jpg);
+	background-repeat:no-repeat;
+	clear:both;
+	height:60px;
+	left:230px;
+	position:absolute;
+	top:800px;
+	width:100%;
+}
+/*PAGINA PRODUTOS*/
+#seguros_empresariais{
+    background-image:url(../images/menu_seguro_emp_fundo.jpg);
+    background-repeat:repeat-y;
+    width:620px;
+    position:absolute;
+    top:210px;
+    float:right;
+    right:30px;
+    height:389px;
+}
+#seg_emp_titulo{
+    display:block;
+    position:absolute;
+    float:left;
+}
+#seg_emp_barra{
+    display:block;
+    float:right;
+    position:absolute;
+    right:151px;
+    top:61px;
+    _top:50px;
+}
+#seg_emp_menu{
+    display:block;
+    left:0;
+    position:absolute;
+    top:80px;
+    width:138px;
+}
+#seg_emp_menu ul {
+    list-style-type:none;
+}
+#seg_emp_menu ul li {
+    color:#4B4A4A;
+    display:block;
+    font-family:Verdana,Geneva,sans-serif;
+    font-size:14px;
+    font-weight:bold;
+    padding-bottom:20px;
+    text-align:center;
+    width:139px;
+}
+
+#seg_emp_menu ul li a{
+	color:#4b4a4a;
+    font-family:Verdana,Geneva,sans-serif;
+    text-decoration:none
+}
+
+#seg_emp_menu ul li a:hover{
+	color:#4b4a4a;
+    font-family:Verdana,Geneva,sans-serif;
+    font-weight:bold;
+}
+
+#seg_emp_img_titulo{
+	display:block;
+	position:absolute;
+	left:150px;
+	top:25px;
+}
+
+#seg_emp_conteudo{
+	display:block;
+	position:absolute;
+	height:317px;
+	width:465px;
+	background-repeat:no-repeat;
+	/*background-image:url(../images/seguros_pessoal_fundo.jpg);*/
+	background-position:115px 89px;
+	left:150px;
+	top:70px;
+}
+
+#seg_emp_tipos_seguros{
+    float:right;
+    height:304px;
+    position:absolute;
+    right:30px;
+    top:610px;
+    width:620px;
+}
+
+#seg_emp_conteudo #seg_emp_conteudo_principal p{
+	color:#4B4A4A;
+	display:block;
+	font-family:Verdana,Geneva,sans-serif;
+	font-size:17px;
+	left:50px;
+	position:relative;
+	text-align:center;
+	top:10px;
+	width:350px;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+}
+
+#seg_emp_conteudo #seg_emp_conteudo_principal h1{
+	color:#4B4A4A;
+	font-family:Verdana,Geneva,sans-serif;
+	font-size:19px;
+	font-weight:bold;
+	text-align:center;
+}
+
+#seg_emp_conteudo #seg_emp_conteudo_opcoes p{
+	color:#4B4A4A;
+	font-family:Verdana,Geneva,sans-serif;
+	font-size:11px;
+	padding-bottom:10px;
+	overflow:hidden;
+}
+
+/* INICIO Configuracao do fundo dos produtos */
+.seg_emp_conteudo_fundo{
+
+}
+.seg_emp_conteudo_fundo_saude{
+    background-image:url(../images/fundo_cruz.jpg);
+}
+.seg_emp_conteudo_fundo_odontologico{
+    background-image:url(../images/fundo_dente.jpg);
+}
+.seg_emp_conteudo_fundo_vida{
+    background-image:url(../images/fundo_2cabecas.jpg);
+}
+.seg_emp_conteudo_fundo_previdencia{
+    background-image:url(../images/fundo_begala.jpg);
+}
+
+.seg_pess_contuedo_fundo{
+    background-image:url(../images/fundo_2homens.jpg);
+}
+.seg_pess_conteudo_fundo_taxi{
+    background-image:url(../images/fundo_carro.jpg);
+}
+.seg_pess_conteudo_fundo_auto{
+    background-image:url(../images/fundo_carro.jpg);
+}
+.seg_pess_conteudo_fundo_consorcio{
+    background-image:url(../images/fundo_casa.jpg);
+}
+.seg_pess_conteudo_fundo_privada{
+    background-image:url(../images/fundo_begala.jpg);
+}
+.seg_pess_conteudo_fundo_residencia{
+    background-image:url(../images/fundo_casa.jpg);
+}
+.seg_pess_conteudo_fundo_vida{
+    background-image:url(../images/fundo_2cabecas.jpg);
+}
+.seg_pess_conteudo_fundo_saude{
+    background-image:url(../images/fundo_cruz.jpg);
+}
+.seg_pess_conteudo_fundo_fianca{
+    background-image:url(../images/fundo_casa.jpg);
+}
+/* FIM Configuracao do fundo dos produtos */
+
+/*FIM PAGINA DE PRODUTOS*/
+
+/*INICIO PAGINA DE SEGURADORAS*/
+#lista_seguradoras{
+	width:620px;
+    position:absolute;
+    top:210px;
+    float:right;
+    right:30px;
+    height:389px;
+	background-color:#eae8e8;
+	overflow:hidden;
+}
+#titulo_seguradora_img{
+	position:absolute;
+	top:15px;
+}
+
+#lista_seguradoras_img {
+	position:absolute;
+	top:65px;
+	left:10px;
+}
+
+#lista_seguradoras_img ul{
+	list-style-type:none;
+	display:inline;
+}
+
+#lista_seguradoras_img ul li{
+	float:left;
+	padding-left:20px;
+	padding-top:20px;
+}
+/*FIM PAGINA DE SEGURADORAS*/
+
+/*INICIO PAGINA DE CONTATO*/
+#contatos_conteudo{
+	width:620px;
+    position:absolute;
+    top:210px;
+    float:right;
+    right:30px;
+    height:389px;
+	background-color:#eae8e8;
+	overflow:hidden;
+}
+
+#titulo_contato_img{
+	position:absolute;
+	top:15px;
+}
+
+#endereco_info{
+	background-color:#DEDCDC;
+	display:block;
+	float:right;
+	height:132px;
+	left:430px;
+	position:absolute;
+	top:80px;
+	width:174px;
+}
+
+#endereco_info h1{
+    color:black;
+    font-family:Verdana,Geneva,sans-serif;
+    font-size:14px;
+    font-weight:bold;
+    letter-spacing:0;
+    margin:0;
+    padding-bottom:20px;
+    padding-left:5px;
+    padding-top:5px;
+}
+
+#endereco_info p{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:11px;
+	padding-bottom:10px;
+	padding-left:5px;
+}
+#contato_info_form{
+    display:block;
+    width:420px;
+    font-size:12px;
+    font-family:Verdana, Geneva, sans-serif;
+    top:20px;
+    position:absolute;
+}
+
+.form_info_txt_nome, .form_info_txt_tel, .form_info_txt_email, .form_info_txt_msg{
+    position:absolute;
+    left:70px;
+}
+.form_info_label_nome, .form_info_label_tel, .form_info_label_email, .form_info_label_msg{
+    position:absolute;
+    text-align:right;
+    width:60px;
+}
+
+.contato_info_label{
+    position:absolute;
+    left:15px;
+    font-style:italic;
+    font-size:10px;
+}
+
+#endereco_form{
+   position:absolute;
+   top:70px;
+   width:100%;
+}
+.form_info_check_news{
+    position:absolute;
+    top:245px;
+    left:45px;
+}
+
+.form_info_label_news{
+    position:absolute;
+    width:380px;
+    top:245px;
+    left:70px;
+}
+
+.form_info_botao {
+    background-color:#752D2E;
+    color:#FFFFFF;
+    font-family:Arial,Helvetica,sans-serif;
+    font-weight:bold;
+    left:175px;
+    position:absolute;
+    top:265px;
+	}
+
+/*FIM PAGINA DE CONTATO*/
+
+/*INICIO PAGINA QUEM SOMOS*/
+#quem_somos{
+    float:right;
+    position:absolute;
+    height:389px;
+    width:620px;
+    top:210px;
+    right:30px;
+    background:#EAE8E8;
+}
+
+#quem_somos #quem_somos_titulo{
+    position:absolute;
+    top:25px;
+}
+
+#quem_somos #quem_somos_descrition{
+    color:#4B4A4A;
+    font-family:Verdana,Geneva,sans-serif;
+    font-size:14px;
+    overflow:hidden;
+    position:absolute;
+    top:80px;
+    width:100%;
+    text-align:center;
+}
+
+#quem_somos #quem_somos_descrition p{
+    padding-bottom:10px;
+}
+
+#quem_somos #quem_somos_descrition h1{
+    padding-bottom:10px;
+    font-weight:bold;
+    color:#4B4A4A;
+    font-family:Verdana,Geneva,sans-serif;
+    font-size:15px;
+}
+/*FIM PAGINA QUEM SOMOS*/
+/*INICIO PAGINA LOCALIZACAO*/
+#localizacao{
+    float:right;
+    position:absolute;
+    height:389px;
+    width:620px;
+    top:210px;
+    right:30px;
+    background:#EAE8E8;
+}
+#localizacao_titulo{
+    position:absolute;
+    top:25px;
+}
+#info_localizacao{
+    background-color:#DEDCDC;
+    display:block;
+    float:right;
+    height:132px;
+    left:30px;
+    position:absolute;
+    top:90px;
+    width:174px;
+}
+#info_localizacao h1{
+    color:black;
+    font-family:Verdana,Geneva,sans-serif;
+    font-size:14px;
+    font-weight:bold;
+    letter-spacing:0;
+    margin:0;
+    padding-bottom:20px;
+    padding-left:5px;
+    padding-top:5px;
+}
+
+#info_localizacao p{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:11px;
+	padding-bottom:10px;
+	padding-left:5px;
+}
+#img_localizacao{
+    border:5px solid #606060;
+    left:230px;
+    position:absolute;
+    top:90px;
+}
+/*FIM PAGINA LOCALIZACAO*/
+

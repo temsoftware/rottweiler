@@ -1,0 +1,23 @@
+
+<div id="lista_seguradoras">
+    <span id="titulo_seguradora_img">
+     	<img src="../images/seguradoras_titulo.jpg"/>
+    </span>
+
+    <span id="lista_seguradoras_img">
+       <ul>
+           <li><img src="../images/porto_logo_grande.jpg"</li>
+           <li><img src="../images/mapfre_logo_grande.jpg"</li>
+       </ul>
+    </span>
+</div>
+
+
+
+
+
+
+<%content_for :insurances_box do%>
+  <%=render :partial => "layouts/tipos_seguros", :locals => {:var => 2 , :div_name => "seg_emp_tipos_seguros"}%>
+<%end%>
+

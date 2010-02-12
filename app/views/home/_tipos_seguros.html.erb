@@ -1,0 +1,11 @@
+<% for item in @type_insurance %>
+  <div id="tipo_seguros_<%=item.name%>" class="tipo_seguros_box">
+    <span id="titulo_aut" class="tipo_seg_titulo"><%=item.name%></span>
+    <span id="img_tupo_seg" class="img_tipo_seg">
+      <img src="../images/<%=item.url_img%>">
+    </span>
+    <span id="tipo_seg_desc_aut" class="tipo_seg_desc"><%=item.description%></span>
+    <span id="saiba_mais" class="saiba_mais"><a href="">Saiba Mais</a></span>
+  </div>
+<% end %>
+

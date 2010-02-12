@@ -1,0 +1,26 @@
+
+
+<div id="localizacao">
+
+  <span id="localizacao_titulo">
+    <img src="../images/localizacao_titulo.jpg">
+  </span>
+
+  <span id="info_localizacao">
+    <h1><%=@store.name%></h1>
+
+     <p>Rua <%=@store.street%>, <%=@store.number%> - <%=@store.neighborhood%> - <%=@store.city%> - <%=@store.state%></p>
+
+     <p>Tel: <%=@store.telephone%><br>
+        Fax: <%=@store.fax%><p>
+  </span>
+
+  <span id="img_localizacao">
+    <img src="../images/loja_endereco.jpg">
+  </span>
+</div>
+
+<%content_for :insurances_box do%>
+  <%=render :partial => "layouts/tipos_seguros", :locals => {:var => 2 , :div_name => "seg_emp_tipos_seguros"}%>
+<%end%>
+

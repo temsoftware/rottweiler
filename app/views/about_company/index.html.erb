@@ -1,0 +1,18 @@
+
+<div id="quem_somos">
+
+  <span id="quem_somos_titulo">
+    <img src="../images/quem_somos_titulo.jpg">
+  </span>
+
+  <span id="quem_somos_descrition">
+      <%= simple_format(@about_company.description) %>
+  </span>
+
+</div>
+
+
+<%content_for :insurances_box do%>
+    <%=render :partial => "layouts/tipos_seguros", :locals => {:var => 2 , :div_name => "seg_emp_tipos_seguros"}%>
+<%end%>
+

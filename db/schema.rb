@@ -9,7 +9,23 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20091104222942) do
+ActiveRecord::Schema.define(:version => 20100210194117) do
+
+  create_table "aboutjrs", :force => true do |t|
+    t.text     "description"
+    t.string   "img_titulo"
+    t.string   "span_name_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "aboutus", :force => true do |t|
+    t.text     "description"
+    t.string   "img_titulo"
+    t.string   "span_name_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "affiliates", :force => true do |t|
     t.string   "name"
@@ -20,6 +36,54 @@ ActiveRecord::Schema.define(:version => 20091104222942) do
     t.string   "data_content_type"
     t.integer  "data_file_size"
     t.datetime "data_updated_at"
+  end
+
+  create_table "contacts", :force => true do |t|
+    t.string   "name"
+    t.string   "email"
+    t.string   "tel"
+    t.integer  "news"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "insurance_businesses", :force => true do |t|
+    t.string   "name"
+    t.text     "description"
+    t.string   "img_titulo"
+    t.string   "span_name_id"
+    t.integer  "insurance_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "type"
+  end
+
+  create_table "insurances", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "stores", :force => true do |t|
+    t.string   "name"
+    t.string   "street"
+    t.integer  "number"
+    t.string   "neighborhood"
+    t.string   "cep"
+    t.string   "city"
+    t.string   "state"
+    t.string   "telephone"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "fax"
+  end
+
+  create_table "type_insurances", :force => true do |t|
+    t.string   "name"
+    t.text     "description"
+    t.string   "url_img"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end

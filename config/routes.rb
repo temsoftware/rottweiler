@@ -8,7 +8,25 @@ ActionController::Routing::Routes.draw do |map|
   # Sample of named route:
   #   map.purchase 'products/:id/purchase', :controller => 'catalog', :action => 'purchase'
   # This route can be invoked with purchase_url(:id => product.id)
-  map.resources :affiliates, :active_scaffold => true
+  map.resources :home
+  map.resources :products
+  map.resources :about_company
+  map.resources :contacts
+  map.resources :locations
+  map.resources :affiliates               , :active_scaffold => true
+  map.resources :type_insurances          , :active_scaffold => true
+  map.resources :insurance_business_admin , :active_scaffold => true
+  map.resources :insurances               , :active_scaffold => true
+  map.resources :about_company_admin      , :active_scaffold => true
+  map.resources :insurance_company_list
+  map.resources :contacts_admin           , :active_scaffold => true
+  map.resources :stores_admin             , :active_scaffold => true
+
+
+  map.seguros '/seguros', :controller => "products", :action => "show"
+
+  map.connect ':controller/:action/:id'
+  map.connect ':controller/:action/:id.:format'
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   map.resources :products
 
@@ -17,7 +35,7 @@ ActionController::Routing::Routes.draw do |map|
 
   # Sample resource route with sub-resources:
   #   map.resources :products, :has_many => [ :comments, :sales ], :has_one => :seller
-  
+
   # Sample resource route with more complex sub-resources
   #   map.resources :products do |products|
   #     products.resources :comments
@@ -38,6 +56,5 @@ ActionController::Routing::Routes.draw do |map|
   # Install the default routes as the lowest priority.
   # Note: These default routes make all actions in every controller accessible via GET requests. You should
   # consider removing or commenting them out if you're using named routes and resources.
-  map.connect ':controller/:action/:id'
-  map.connect ':controller/:action/:id.:format'
 end
+

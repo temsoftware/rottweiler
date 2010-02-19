@@ -13,16 +13,6 @@ ActiveRecord::Schema.define(:version => 20100210194117) do
 
   create_table "aboutjrs", :force => true do |t|
     t.text     "description"
-    t.string   "img_titulo"
-    t.string   "span_name_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "aboutus", :force => true do |t|
-    t.text     "description"
-    t.string   "img_titulo"
-    t.string   "span_name_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -42167,3 +42167,1329 @@ ActionController::RoutingError (No route matches "/javascripts/lightbox.js" with
   /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
 
 Rendering rescues/layout (not_found)
+ActiveScaffold: extending RESTful routes for affiliates
+ActiveScaffold: extending RESTful routes for type_insurances
+ActiveScaffold: extending RESTful routes for insurance_business_admin
+ActiveScaffold: extending RESTful routes for insurances
+ActiveScaffold: extending RESTful routes for about_company_admin
+ActiveScaffold: extending RESTful routes for contacts_admin
+ActiveScaffold: extending RESTful routes for stores_admin
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-12 15:18:03) [GET]
+  [4;36;1mTypeInsurance Load (0.4ms)[0m   [0;1mSELECT * FROM `type_insurances` [0m
+Rendering template within layouts/jr
+Rendering home/index
+  [4;35;1mTypeInsurance Load (1.0ms)[0m   [0mSELECT * FROM `type_insurances` LIMIT 4[0m
+  [4;36;1mTypeInsurance Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `type_insurances`[0m
+Rendered layouts/_tipos_seguros (17.7ms)
+Rendered layouts/_menu_esquerda (102.2ms)
+Rendered layouts/_menu_seguradoras (0.9ms)
+Rendered layouts/_menu_parceiros (0.9ms)
+Completed in 408ms (View: 399, DB: 4) | 200 OK [http://localhost/home]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-12 15:18:04) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/lightbox.js" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-12 15:18:04) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/lightbox.js" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AboutCompanyController#index (for 127.0.0.1 at 2010-02-12 15:18:15) [GET]
+  [4;35;1mAboutjr Load (0.3ms)[0m   [0mSELECT * FROM `aboutjrs` LIMIT 1[0m
+Rendering template within layouts/jr
+Rendering about_company/index
+  [4;36;1mAboutjr Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `aboutjrs`[0m
+  [4;35;1mTypeInsurance Load (0.3ms)[0m   [0mSELECT * FROM `type_insurances` LIMIT 2[0m
+  [4;36;1mTypeInsurance Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `type_insurances`[0m
+Rendered layouts/_tipos_seguros (9.3ms)
+Rendered layouts/_menu_esquerda (3.9ms)
+Rendered layouts/_menu_seguradoras (0.1ms)
+Rendered layouts/_menu_parceiros (0.1ms)
+Completed in 58ms (View: 51, DB: 3) | 200 OK [http://localhost/about_company]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-12 15:18:15) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/lightbox.js" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2010-02-12 15:18:18) [GET]
+  Parameters: {"type"=>"Pessoais"}
+  [4;35;1mInsuranceBusiness Load (0.6ms)[0m   [0mSELECT `insurance_businesses`.* FROM `insurance_businesses` INNER JOIN `insurances` ON `insurances`.id = `insurance_businesses`.insurance_id WHERE (`insurances`.`name` = 'Pessoais Principal') LIMIT 1[0m
+Rendering template within layouts/jr
+Rendering products/index
+  [4;36;1mInsuranceBusiness Load (0.6ms)[0m   [0;1mSELECT `insurance_businesses`.* FROM `insurance_businesses` INNER JOIN `insurances` ON `insurances`.id = `insurance_businesses`.insurance_id WHERE (`insurances`.`name` = 'Pessoais') [0m
+  [4;35;1mInsuranceBusiness Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `insurance_businesses`[0m
+  [4;36;1mTypeInsurance Load (1.0ms)[0m   [0;1mSELECT * FROM `type_insurances` LIMIT 2[0m
+  [4;35;1mTypeInsurance Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `type_insurances`[0m
+Rendered layouts/_tipos_seguros (10.0ms)
+Rendered layouts/_menu_esquerda (3.8ms)
+Rendered layouts/_menu_seguradoras (0.1ms)
+Rendered layouts/_menu_parceiros (0.1ms)
+Completed in 66ms (View: 40, DB: 4) | 200 OK [http://localhost/products?type=Pessoais]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-12 15:18:18) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/lightbox.js" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (15.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (19.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing InsuranceCompanyListController#index (for 127.0.0.1 at 2010-02-12 15:18:20) [GET]
+Rendering template within layouts/jr
+Rendering insurance_company_list/index
+  [4;36;1mTypeInsurance Load (0.2ms)[0m   [0;1mSELECT * FROM `type_insurances` LIMIT 2[0m
+  [4;35;1mTypeInsurance Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `type_insurances`[0m
+Rendered layouts/_tipos_seguros (9.5ms)
+Rendered layouts/_menu_esquerda (4.0ms)
+Rendered layouts/_menu_seguradoras (0.1ms)
+Rendered layouts/_menu_parceiros (0.1ms)
+Completed in 34ms (View: 33, DB: 36) | 200 OK [http://localhost/insurance_company_list]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-12 15:18:20) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/lightbox.js" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2010-02-12 15:18:27) [GET]
+  Parameters: {"type"=>"Empresarias"}
+  [4;36;1mInsuranceBusiness Load (0.6ms)[0m   [0;1mSELECT `insurance_businesses`.* FROM `insurance_businesses` INNER JOIN `insurances` ON `insurances`.id = `insurance_businesses`.insurance_id WHERE (`insurances`.`name` = 'Empresariais Principal') LIMIT 1[0m
+Rendering template within layouts/jr
+Rendering products/index
+  [4;35;1mInsuranceBusiness Load (0.7ms)[0m   [0mSELECT `insurance_businesses`.* FROM `insurance_businesses` INNER JOIN `insurances` ON `insurances`.id = `insurance_businesses`.insurance_id WHERE (`insurances`.`name` = 'Empresariais') [0m
+  [4;36;1mInsuranceBusiness Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `insurance_businesses`[0m
+  [4;35;1mTypeInsurance Load (0.2ms)[0m   [0mSELECT * FROM `type_insurances` LIMIT 2[0m
+  [4;36;1mTypeInsurance Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `type_insurances`[0m
+Rendered layouts/_tipos_seguros (87.2ms)
+Rendered layouts/_menu_esquerda (4.1ms)
+Rendered layouts/_menu_seguradoras (0.1ms)
+Rendered layouts/_menu_parceiros (0.1ms)
+Completed in 120ms (View: 105, DB: 4) | 200 OK [http://localhost/products?type=Empresarias]
+  [4;35;1mSQL (8.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-12 15:18:27) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/lightbox.js" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2010-02-12 15:18:32) [GET]
+  Parameters: {"type"=>"Pessoais"}
+  [4;35;1mInsuranceBusiness Load (0.2ms)[0m   [0mSELECT `insurance_businesses`.* FROM `insurance_businesses` INNER JOIN `insurances` ON `insurances`.id = `insurance_businesses`.insurance_id WHERE (`insurances`.`name` = 'Pessoais Principal') LIMIT 1[0m
+Rendering template within layouts/jr
+Rendering products/index
+  [4;36;1mInsuranceBusiness Load (0.2ms)[0m   [0;1mSELECT `insurance_businesses`.* FROM `insurance_businesses` INNER JOIN `insurances` ON `insurances`.id = `insurance_businesses`.insurance_id WHERE (`insurances`.`name` = 'Pessoais') [0m
+  [4;35;1mInsuranceBusiness Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `insurance_businesses`[0m
+  [4;36;1mTypeInsurance Load (0.2ms)[0m   [0;1mSELECT * FROM `type_insurances` LIMIT 2[0m
+  [4;35;1mTypeInsurance Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `type_insurances`[0m
+Rendered layouts/_tipos_seguros (9.8ms)
+Rendered layouts/_menu_esquerda (4.0ms)
+Rendered layouts/_menu_seguradoras (0.1ms)
+Rendered layouts/_menu_parceiros (0.1ms)
+Completed in 41ms (View: 28, DB: 3) | 200 OK [http://localhost/products?type=Pessoais]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-12 15:18:32) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/lightbox.js" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (28.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-02-12 15:18:36) [GET]
+  [4;36;1mStore Load (0.3ms)[0m   [0;1mSELECT * FROM `stores` LIMIT 1[0m
+Rendering template within layouts/jr
+Rendering contacts/index
+  [4;35;1mStore Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `stores`[0m
+  [4;36;1mTypeInsurance Load (0.1ms)[0m   [0;1mSELECT * FROM `type_insurances` LIMIT 2[0m
+  [4;35;1mTypeInsurance Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `type_insurances`[0m
+Rendered layouts/_tipos_seguros (10.1ms)
+Rendered layouts/_menu_esquerda (3.8ms)
+Rendered layouts/_menu_seguradoras (0.1ms)
+Rendered layouts/_menu_parceiros (0.1ms)
+Completed in 52ms (View: 45, DB: 32) | 200 OK [http://localhost/contacts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-12 15:18:36) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/lightbox.js" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-12 15:32:26) [GET]
+  [4;36;1mTypeInsurance Load (0.4ms)[0m   [0;1mSELECT * FROM `type_insurances` [0m
+Rendering template within layouts/jr
+Rendering home/index
+  [4;35;1mTypeInsurance Load (0.3ms)[0m   [0mSELECT * FROM `type_insurances` LIMIT 4[0m
+  [4;36;1mTypeInsurance Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `type_insurances`[0m
+Rendered layouts/_tipos_seguros (10.7ms)
+Rendered layouts/_menu_esquerda (9.8ms)
+Rendered layouts/_menu_seguradoras (0.3ms)
+Rendered layouts/_menu_parceiros (0.2ms)
+Completed in 48ms (View: 34, DB: 3) | 200 OK [http://localhost/home]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-12 15:32:26) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/lightbox.js" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+ActiveScaffold: extending RESTful routes for affiliates
+ActiveScaffold: extending RESTful routes for type_insurances
+ActiveScaffold: extending RESTful routes for insurance_business_admin
+ActiveScaffold: extending RESTful routes for insurances
+ActiveScaffold: extending RESTful routes for about_company_admin
+ActiveScaffold: extending RESTful routes for contacts_admin
+ActiveScaffold: extending RESTful routes for stores_admin
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (111.4ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (191.5ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateAffiliates (20091104222806)
+  [4;35;1mSQL (117.4ms)[0m   [0mCREATE TABLE `affiliates` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `website` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (55.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20091104222806')[0m
+Migrating to AddAttachmentsDataToAffiliate (20091104222942)
+  [4;35;1mSQL (272.7ms)[0m   [0mALTER TABLE `affiliates` ADD `data_file_name` varchar(255)[0m
+  [4;36;1mSQL (259.0ms)[0m   [0;1mALTER TABLE `affiliates` ADD `data_content_type` varchar(255)[0m
+  [4;35;1mSQL (236.9ms)[0m   [0mALTER TABLE `affiliates` ADD `data_file_size` int(11)[0m
+  [4;36;1mSQL (255.9ms)[0m   [0;1mALTER TABLE `affiliates` ADD `data_updated_at` datetime[0m
+  [4;35;1mSQL (43.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091104222942')[0m
+Migrating to CreateTypeInsurances (20100129201009)
+  [4;36;1mSQL (148.3ms)[0m   [0;1mCREATE TABLE `type_insurances` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `description` text, `url_img` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (44.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100129201009')[0m
+Migrating to CreateInsuranceBusinesses (20100201161311)
+  [4;36;1mSQL (125.0ms)[0m   [0;1mCREATE TABLE `insurance_businesses` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `description` text, `img_titulo` varchar(255), `span_name_id` varchar(255), `insurance_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (45.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100201161311')[0m
+Migrating to AddTypeToInsuranceBusiness (20100202192616)
+  [4;36;1mSQL (185.3ms)[0m   [0;1mALTER TABLE `insurance_businesses` ADD `type` int(11)[0m
+  [4;35;1mSQL (31.4ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100202192616')[0m
+Migrating to CreateInsurances (20100202195253)
+  [4;36;1mSQL (81.2ms)[0m   [0;1mCREATE TABLE `insurances` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (32.5ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100202195253')[0m
+Migrating to CreateAboutjrs (20100208181629)
+  [4;36;1mSQL (92.4ms)[0m   [0;1mCREATE TABLE `aboutjrs` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `description` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (43.8ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100208181629')[0m
+Migrating to CreateContacts (20100210175622)
+  [4;36;1mSQL (91.9ms)[0m   [0;1mCREATE TABLE `contacts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `email` varchar(255), `tel` varchar(255), `news` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (43.7ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100210175622')[0m
+Migrating to CreateStores (20100210185512)
+  [4;36;1mSQL (88.5ms)[0m   [0;1mCREATE TABLE `stores` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `street` varchar(255), `number` int(11), `neighborhood` varchar(255), `cep` varchar(255), `city` varchar(255), `state` varchar(255), `telephone` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (44.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100210185512')[0m
+Migrating to AddFaxToStores (20100210194117)
+  [4;36;1mSQL (196.7ms)[0m   [0;1mALTER TABLE `stores` ADD `fax` varchar(255)[0m
+  [4;35;1mSQL (32.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100210194117')[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mSHOW FIELDS FROM `aboutjrs`[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mdescribe `aboutjrs`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW KEYS FROM `aboutjrs`[0m
+  [4;36;1mSQL (2.2ms)[0m   [0;1mSHOW FIELDS FROM `affiliates`[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mdescribe `affiliates`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW KEYS FROM `affiliates`[0m
+  [4;35;1mSQL (4.6ms)[0m   [0mSHOW FIELDS FROM `contacts`[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mdescribe `contacts`[0m
+  [4;35;1mSQL (2.9ms)[0m   [0mSHOW KEYS FROM `contacts`[0m
+  [4;36;1mSQL (2.4ms)[0m   [0;1mSHOW FIELDS FROM `insurance_businesses`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mdescribe `insurance_businesses`[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mSHOW KEYS FROM `insurance_businesses`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSHOW FIELDS FROM `insurances`[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mdescribe `insurances`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW KEYS FROM `insurances`[0m
+  [4;36;1mSQL (2.9ms)[0m   [0;1mSHOW FIELDS FROM `stores`[0m
+  [4;35;1mSQL (2.3ms)[0m   [0mdescribe `stores`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `stores`[0m
+  [4;35;1mSQL (3.9ms)[0m   [0mSHOW FIELDS FROM `type_insurances`[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mdescribe `type_insurances`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW KEYS FROM `type_insurances`[0m
+ActiveScaffold: extending RESTful routes for affiliates
+ActiveScaffold: extending RESTful routes for type_insurances
+ActiveScaffold: extending RESTful routes for insurance_business_admin
+ActiveScaffold: extending RESTful routes for insurances
+ActiveScaffold: extending RESTful routes for about_company_admin
+ActiveScaffold: extending RESTful routes for contacts_admin
+ActiveScaffold: extending RESTful routes for stores_admin
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-12 15:39:02) [GET]
+  [4;36;1mTypeInsurance Load (0.3ms)[0m   [0;1mSELECT * FROM `type_insurances` [0m
+Rendering template within layouts/jr
+Rendering home/index
+  [4;35;1mTypeInsurance Load (0.3ms)[0m   [0mSELECT * FROM `type_insurances` LIMIT 4[0m
+Rendered layouts/_tipos_seguros (2.6ms)
+Rendered layouts/_menu_esquerda (88.2ms)
+Rendered layouts/_menu_seguradoras (1.0ms)
+Rendered layouts/_menu_parceiros (0.9ms)
+Completed in 161ms (View: 156, DB: 1) | 200 OK [http://localhost/home]
+  [4;36;1mSQL (7.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-12 15:39:02) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/lightbox.js" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (5.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AboutCompanyController#index (for 127.0.0.1 at 2010-02-12 15:39:06) [GET]
+  [4;36;1mAboutjr Load (0.4ms)[0m   [0;1mSELECT * FROM `aboutjrs` LIMIT 1[0m
+Rendering template within layouts/jr
+Rendering about_company/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.description) on line #9 of app/views/about_company/index.html.erb:
+6:   </span>
+7: 
+8:   <span id="quem_somos_descrition">
+9:       <%= simple_format(@about_company.description) %>
+10:   </span>
+11: 
+12: </div>
+
+    app/views/about_company/index.html.erb:9
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (51.0ms)
+Rendered rescues/_request_and_response (1.9ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2010-02-12 15:39:10) [GET]
+  Parameters: {"type"=>"Pessoais"}
+  [4;35;1mInsuranceBusiness Load (0.4ms)[0m   [0mSELECT `insurance_businesses`.* FROM `insurance_businesses` INNER JOIN `insurances` ON `insurances`.id = `insurance_businesses`.insurance_id WHERE (`insurances`.`name` = 'Pessoais Principal') LIMIT 1[0m
+Rendering template within layouts/jr
+Rendering products/index
+  [4;36;1mInsuranceBusiness Load (0.4ms)[0m   [0;1mSELECT `insurance_businesses`.* FROM `insurance_businesses` INNER JOIN `insurances` ON `insurances`.id = `insurance_businesses`.insurance_id WHERE (`insurances`.`name` = 'Pessoais') [0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.img_titulo) on line #23 of app/views/products/index.html.erb:
+20:   </span>
+21: 
+22:   <span id="seg_emp_img_titulo">
+23:     <img src="<%= @insurance_show.img_titulo%>">
+24:   </span>
+25: 
+26:   <span id="seg_emp_conteudo" class="<%= @insurance_show.span_name_id%>">
+
+    app/views/products/index.html.erb:23
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (51.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing InsuranceCompanyListController#index (for 127.0.0.1 at 2010-02-12 15:39:13) [GET]
+Rendering template within layouts/jr
+Rendering insurance_company_list/index
+  [4;35;1mTypeInsurance Load (0.4ms)[0m   [0mSELECT * FROM `type_insurances` LIMIT 2[0m
+Rendered layouts/_tipos_seguros (6.1ms)
+Rendered layouts/_menu_esquerda (3.9ms)
+Rendered layouts/_menu_seguradoras (0.1ms)
+Rendered layouts/_menu_parceiros (0.1ms)
+Completed in 40ms (View: 39, DB: 1) | 200 OK [http://localhost/insurance_company_list]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-12 15:39:13) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/lightbox.js" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-02-12 15:39:17) [GET]
+  [4;36;1mStore Load (0.8ms)[0m   [0;1mSELECT * FROM `stores` LIMIT 1[0m
+Rendering template within layouts/jr
+Rendering contacts/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.name) on line #11 of app/views/contacts/index.html.erb:
+8: 
+9: 
+10:   <span id="endereco_info">
+11:    	<h1><%=@store.name%></h1>
+12: 
+13:      <p>Rua <%=@store.street%>, <%=@store.number%> - <%=@store.neighborhood%> - <%=@store.city%> - <%=@store.state%></p>
+14: 
+
+    app/views/contacts/index.html.erb:11
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (48.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2010-02-12 15:39:20) [GET]
+  [4;35;1mStore Load (0.1ms)[0m   [0mSELECT * FROM `stores` LIMIT 1[0m
+Rendering template within layouts/jr
+Rendering locations/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.name) on line #10 of app/views/locations/index.html.erb:
+7:   </span>
+8: 
+9:   <span id="info_localizacao">
+10:     <h1><%=@store.name%></h1>
+11: 
+12:      <p>Rua <%=@store.street%>, <%=@store.number%> - <%=@store.neighborhood%> - <%=@store.city%> - <%=@store.state%></p>
+13: 
+
+    app/views/locations/index.html.erb:10
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (49.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+ActiveScaffold: extending RESTful routes for affiliates
+ActiveScaffold: extending RESTful routes for type_insurances
+ActiveScaffold: extending RESTful routes for insurance_business_admin
+ActiveScaffold: extending RESTful routes for insurances
+ActiveScaffold: extending RESTful routes for about_company_admin
+ActiveScaffold: extending RESTful routes for contacts_admin
+ActiveScaffold: extending RESTful routes for stores_admin
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (116.7ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (239.4ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateAffiliates (20091104222806)
+  [4;35;1mSQL (115.7ms)[0m   [0mCREATE TABLE `affiliates` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `website` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (55.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20091104222806')[0m
+Migrating to AddAttachmentsDataToAffiliate (20091104222942)
+  [4;35;1mSQL (250.7ms)[0m   [0mALTER TABLE `affiliates` ADD `data_file_name` varchar(255)[0m
+  [4;36;1mSQL (246.4ms)[0m   [0;1mALTER TABLE `affiliates` ADD `data_content_type` varchar(255)[0m
+  [4;35;1mSQL (246.3ms)[0m   [0mALTER TABLE `affiliates` ADD `data_file_size` int(11)[0m
+  [4;36;1mSQL (225.4ms)[0m   [0;1mALTER TABLE `affiliates` ADD `data_updated_at` datetime[0m
+  [4;35;1mSQL (44.5ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091104222942')[0m
+Migrating to CreateTypeInsurances (20100129201009)
+  [4;36;1mSQL (150.2ms)[0m   [0;1mCREATE TABLE `type_insurances` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `description` text, `url_img` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (44.4ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100129201009')[0m
+Migrating to CreateInsuranceBusinesses (20100201161311)
+  [4;36;1mSQL (154.2ms)[0m   [0;1mCREATE TABLE `insurance_businesses` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `description` text, `img_titulo` varchar(255), `span_name_id` varchar(255), `insurance_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (47.4ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100201161311')[0m
+Migrating to AddTypeToInsuranceBusiness (20100202192616)
+  [4;36;1mSQL (258.5ms)[0m   [0;1mALTER TABLE `insurance_businesses` ADD `type` int(11)[0m
+  [4;35;1mSQL (47.4ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100202192616')[0m
+Migrating to CreateInsurances (20100202195253)
+  [4;36;1mSQL (121.7ms)[0m   [0;1mCREATE TABLE `insurances` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (43.8ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100202195253')[0m
+Migrating to CreateAboutjrs (20100208181629)
+  [4;36;1mSQL (126.8ms)[0m   [0;1mCREATE TABLE `aboutjrs` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `description` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (43.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100208181629')[0m
+Migrating to CreateContacts (20100210175622)
+  [4;36;1mSQL (124.8ms)[0m   [0;1mCREATE TABLE `contacts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `email` varchar(255), `tel` varchar(255), `news` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (44.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100210175622')[0m
+Migrating to CreateStores (20100210185512)
+  [4;36;1mSQL (111.7ms)[0m   [0;1mCREATE TABLE `stores` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `street` varchar(255), `number` int(11), `neighborhood` varchar(255), `cep` varchar(255), `city` varchar(255), `state` varchar(255), `telephone` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (43.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100210185512')[0m
+Migrating to AddFaxToStores (20100210194117)
+  [4;36;1mSQL (251.1ms)[0m   [0;1mALTER TABLE `stores` ADD `fax` varchar(255)[0m
+  [4;35;1mSQL (44.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100210194117')[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mSHOW FIELDS FROM `aboutjrs`[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mdescribe `aboutjrs`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW KEYS FROM `aboutjrs`[0m
+  [4;36;1mSQL (2.2ms)[0m   [0;1mSHOW FIELDS FROM `affiliates`[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mdescribe `affiliates`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `affiliates`[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mSHOW FIELDS FROM `contacts`[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mdescribe `contacts`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW KEYS FROM `contacts`[0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mSHOW FIELDS FROM `insurance_businesses`[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mdescribe `insurance_businesses`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `insurance_businesses`[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mSHOW FIELDS FROM `insurances`[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mdescribe `insurances`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW KEYS FROM `insurances`[0m
+  [4;36;1mSQL (2.5ms)[0m   [0;1mSHOW FIELDS FROM `stores`[0m
+  [4;35;1mSQL (2.3ms)[0m   [0mdescribe `stores`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `stores`[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mSHOW FIELDS FROM `type_insurances`[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mdescribe `type_insurances`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW KEYS FROM `type_insurances`[0m
+ActiveScaffold: extending RESTful routes for affiliates
+ActiveScaffold: extending RESTful routes for type_insurances
+ActiveScaffold: extending RESTful routes for insurance_business_admin
+ActiveScaffold: extending RESTful routes for insurances
+ActiveScaffold: extending RESTful routes for about_company_admin
+ActiveScaffold: extending RESTful routes for contacts_admin
+ActiveScaffold: extending RESTful routes for stores_admin
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-12 15:57:40) [GET]
+  [4;36;1mTypeInsurance Load (1.4ms)[0m   [0;1mSELECT * FROM `type_insurances` [0m
+Rendering template within layouts/jr
+Rendering home/index
+  [4;35;1mTypeInsurance Load (0.3ms)[0m   [0mSELECT * FROM `type_insurances` LIMIT 4[0m
+  [4;36;1mTypeInsurance Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `type_insurances`[0m
+Rendered layouts/_tipos_seguros (6.5ms)
+Rendered layouts/_menu_esquerda (90.0ms)
+Rendered layouts/_menu_seguradoras (0.9ms)
+Rendered layouts/_menu_parceiros (0.9ms)
+Completed in 168ms (View: 161, DB: 3) | 200 OK [http://localhost/home]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-12 15:57:40) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/lightbox.js" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-12 15:57:43) [GET]
+  [4;35;1mTypeInsurance Load (0.2ms)[0m   [0mSELECT * FROM `type_insurances` [0m
+Rendering template within layouts/jr
+Rendering home/index
+  [4;36;1mTypeInsurance Load (0.1ms)[0m   [0;1mSELECT * FROM `type_insurances` LIMIT 4[0m
+  [4;35;1mTypeInsurance Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `type_insurances`[0m
+Rendered layouts/_tipos_seguros (4.3ms)
+Rendered layouts/_menu_esquerda (4.0ms)
+Rendered layouts/_menu_seguradoras (0.1ms)
+Rendered layouts/_menu_parceiros (0.1ms)
+Completed in 20ms (View: 14, DB: 1) | 200 OK [http://localhost/home]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-12 15:57:43) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/lightbox.js" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AboutCompanyController#index (for 127.0.0.1 at 2010-02-12 15:57:45) [GET]
+  [4;36;1mAboutjr Load (0.3ms)[0m   [0;1mSELECT * FROM `aboutjrs` LIMIT 1[0m
+Rendering template within layouts/jr
+Rendering about_company/index
+  [4;35;1mAboutjr Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `aboutjrs`[0m
+  [4;36;1mTypeInsurance Load (0.3ms)[0m   [0;1mSELECT * FROM `type_insurances` LIMIT 2[0m
+  [4;35;1mTypeInsurance Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `type_insurances`[0m
+Rendered layouts/_tipos_seguros (9.3ms)
+Rendered layouts/_menu_esquerda (3.9ms)
+Rendered layouts/_menu_seguradoras (0.1ms)
+Rendered layouts/_menu_parceiros (0.1ms)
+Completed in 110ms (View: 33, DB: 3) | 200 OK [http://localhost/about_company]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-12 15:57:45) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/lightbox.js" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2010-02-12 15:57:47) [GET]
+  Parameters: {"type"=>"Pessoais"}
+  [4;36;1mInsuranceBusiness Load (0.5ms)[0m   [0;1mSELECT `insurance_businesses`.* FROM `insurance_businesses` INNER JOIN `insurances` ON `insurances`.id = `insurance_businesses`.insurance_id WHERE (`insurances`.`name` = 'Pessoais Principal') LIMIT 1[0m
+Rendering template within layouts/jr
+Rendering products/index
+  [4;35;1mInsuranceBusiness Load (0.5ms)[0m   [0mSELECT `insurance_businesses`.* FROM `insurance_businesses` INNER JOIN `insurances` ON `insurances`.id = `insurance_businesses`.insurance_id WHERE (`insurances`.`name` = 'Pessoais') [0m
+  [4;36;1mInsuranceBusiness Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `insurance_businesses`[0m
+  [4;35;1mTypeInsurance Load (0.8ms)[0m   [0mSELECT * FROM `type_insurances` LIMIT 2[0m
+  [4;36;1mTypeInsurance Columns (3.1ms)[0m   [0;1mSHOW FIELDS FROM `type_insurances`[0m
+Rendered layouts/_tipos_seguros (12.0ms)
+Rendered layouts/_menu_esquerda (3.9ms)
+Rendered layouts/_menu_seguradoras (0.1ms)
+Rendered layouts/_menu_parceiros (0.1ms)
+Completed in 56ms (View: 40, DB: 6) | 200 OK [http://localhost/products?type=Pessoais]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-12 15:57:47) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/lightbox.js" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#show (for 127.0.0.1 at 2010-02-12 15:57:48) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mInsuranceBusiness Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `insurance_businesses`[0m
+  [4;36;1mInsuranceBusiness Load (0.3ms)[0m   [0;1mSELECT * FROM `insurance_businesses` WHERE (`insurance_businesses`.`id` = 4) [0m
+  [4;35;1mInsurance Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `insurances`[0m
+  [4;36;1mInsurance Load (0.3ms)[0m   [0;1mSELECT * FROM `insurances` WHERE (`insurances`.`id` = 1) [0m
+Rendering template within layouts/jr
+Rendering products/show
+  [4;35;1mInsuranceBusiness Load (0.2ms)[0m   [0mSELECT `insurance_businesses`.* FROM `insurance_businesses` INNER JOIN `insurances` ON `insurances`.id = `insurance_businesses`.insurance_id WHERE (`insurances`.`name` = 'Pessoais') [0m
+  [4;36;1mTypeInsurance Load (0.1ms)[0m   [0;1mSELECT * FROM `type_insurances` LIMIT 2[0m
+  [4;35;1mTypeInsurance Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `type_insurances`[0m
+Rendered layouts/_tipos_seguros (8.9ms)
+Rendered layouts/_menu_esquerda (4.1ms)
+Rendered layouts/_menu_seguradoras (0.1ms)
+Rendered layouts/_menu_parceiros (0.1ms)
+Completed in 49ms (View: 33, DB: 4) | 200 OK [http://localhost/seguros?id=4]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-12 15:57:49) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/lightbox.js" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#show (for 127.0.0.1 at 2010-02-12 15:57:50) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mInsuranceBusiness Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `insurance_businesses`[0m
+  [4;35;1mInsuranceBusiness Load (0.3ms)[0m   [0mSELECT * FROM `insurance_businesses` WHERE (`insurance_businesses`.`id` = 5) [0m
+  [4;36;1mInsurance Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `insurances`[0m
+  [4;35;1mInsurance Load (0.1ms)[0m   [0mSELECT * FROM `insurances` WHERE (`insurances`.`id` = 1) [0m
+Rendering template within layouts/jr
+Rendering products/show
+  [4;36;1mInsuranceBusiness Load (0.2ms)[0m   [0;1mSELECT `insurance_businesses`.* FROM `insurance_businesses` INNER JOIN `insurances` ON `insurances`.id = `insurance_businesses`.insurance_id WHERE (`insurances`.`name` = 'Pessoais') [0m
+  [4;35;1mTypeInsurance Load (0.2ms)[0m   [0mSELECT * FROM `type_insurances` LIMIT 2[0m
+  [4;36;1mTypeInsurance Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `type_insurances`[0m
+Rendered layouts/_tipos_seguros (9.5ms)
+Rendered layouts/_menu_esquerda (4.0ms)
+Rendered layouts/_menu_seguradoras (0.1ms)
+Rendered layouts/_menu_parceiros (0.1ms)
+Completed in 43ms (View: 27, DB: 4) | 200 OK [http://localhost/seguros?id=5]
+  [4;35;1mSQL (10.8ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (9.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-12 15:57:50) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/lightbox.js" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing InsuranceCompanyListController#index (for 127.0.0.1 at 2010-02-12 15:57:52) [GET]
+Rendering template within layouts/jr
+Rendering insurance_company_list/index
+  [4;35;1mTypeInsurance Load (0.1ms)[0m   [0mSELECT * FROM `type_insurances` LIMIT 2[0m
+  [4;36;1mTypeInsurance Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `type_insurances`[0m
+Rendered layouts/_tipos_seguros (9.0ms)
+Rendered layouts/_menu_esquerda (3.8ms)
+Rendered layouts/_menu_seguradoras (0.1ms)
+Rendered layouts/_menu_parceiros (0.1ms)
+Completed in 32ms (View: 31, DB: 1) | 200 OK [http://localhost/insurance_company_list]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-12 15:57:52) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/lightbox.js" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-02-12 15:57:57) [GET]
+  [4;35;1mStore Load (0.8ms)[0m   [0mSELECT * FROM `stores` LIMIT 1[0m
+Rendering template within layouts/jr
+Rendering contacts/index
+  [4;36;1mStore Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `stores`[0m
+  [4;35;1mTypeInsurance Load (0.1ms)[0m   [0mSELECT * FROM `type_insurances` LIMIT 2[0m
+  [4;36;1mTypeInsurance Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `type_insurances`[0m
+Rendered layouts/_tipos_seguros (9.1ms)
+Rendered layouts/_menu_esquerda (4.0ms)
+Rendered layouts/_menu_seguradoras (0.1ms)
+Rendered layouts/_menu_parceiros (0.1ms)
+Completed in 72ms (View: 58, DB: 3) | 200 OK [http://localhost/contacts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (13.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-12 15:57:57) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/lightbox.js" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2010-02-12 15:57:59) [GET]
+  [4;35;1mStore Load (0.1ms)[0m   [0mSELECT * FROM `stores` LIMIT 1[0m
+Rendering template within layouts/jr
+Rendering locations/index
+  [4;36;1mStore Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `stores`[0m
+  [4;35;1mTypeInsurance Load (0.1ms)[0m   [0mSELECT * FROM `type_insurances` LIMIT 2[0m
+  [4;36;1mTypeInsurance Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `type_insurances`[0m
+Rendered layouts/_tipos_seguros (9.4ms)
+Rendered layouts/_menu_esquerda (4.1ms)
+Rendered layouts/_menu_seguradoras (0.2ms)
+Rendered layouts/_menu_parceiros (0.1ms)
+Completed in 45ms (View: 38, DB: 3) | 200 OK [http://localhost/locations]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-12 15:57:59) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/lightbox.js" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-12 15:58:04) [GET]
+
+ActionController::RoutingError (No route matches "/admin" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-12 15:58:09) [GET]
+
+ActionController::RoutingError (No route matches "/main" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mStore Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `stores`[0m
+
+
+Processing StoresAdminController#index (for 127.0.0.1 at 2010-02-12 15:58:57) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `stores` [0m
+  [4;35;1mStore Load (0.4ms)[0m   [0mSELECT `stores`.* FROM `stores` ORDER BY stores.`id` ASC LIMIT 0, 15[0m
+Rendering template within layouts/admin
+Rendering list
+Rendered _list_header (10.4ms)
+Rendered _list_column_headings (94.1ms)
+Rendered _messages (1.5ms)
+Rendered _list_actions (6.4ms)
+Rendered _list_record (21.6ms)
+Rendered _list (150.6ms)
+Rendered layouts/_menu (13.9ms)
+Rendered layouts/_rodape (0.7ms)
+Completed in 385ms (View: 342, DB: 2) | 200 OK [http://localhost/stores_admin]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-12 15:58:58) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/lightbox.js" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mAffiliate Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `affiliates`[0m
+
+
+Processing AffiliatesController#index (for 127.0.0.1 at 2010-02-12 15:59:01) [GET]
+  [4;35;1mSQL (6.3ms)[0m   [0mSELECT count(*) AS count_all FROM `affiliates` [0m
+  [4;36;1mAffiliate Load (0.3ms)[0m   [0;1mSELECT `affiliates`.* FROM `affiliates` ORDER BY affiliates.`id` ASC LIMIT 0, 15[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT `affiliates`.* FROM `affiliates` ORDER BY affiliates.`id` ASC LIMIT 0, 15[0m
+Rendering template within layouts/admin
+Rendering list
+Rendered _list_header (10.2ms)
+Rendered _list_column_headings (21.3ms)
+Rendered _messages (1.4ms)
+Rendered _list (37.4ms)
+Rendered layouts/_menu (2.1ms)
+Rendered layouts/_rodape (0.1ms)
+Completed in 107ms (View: 93, DB: 8) | 200 OK [http://localhost/affiliates]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-12 15:59:01) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/lightbox.js" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mTypeInsurance Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `type_insurances`[0m
+
+
+Processing TypeInsurancesController#index (for 127.0.0.1 at 2010-02-12 15:59:03) [GET]
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `type_insurances` [0m
+  [4;36;1mTypeInsurance Load (0.3ms)[0m   [0;1mSELECT `type_insurances`.* FROM `type_insurances` ORDER BY type_insurances.`id` ASC LIMIT 0, 15[0m
+Rendering template within layouts/admin
+Rendering list
+Rendered _list_header (10.4ms)
+Rendered _list_column_headings (19.8ms)
+Rendered _messages (2.0ms)
+Rendered _list_actions (13.3ms)
+Rendered _list_record (24.9ms)
+Rendered _list_actions (6.4ms)
+Rendered _list_record (8.9ms)
+Rendered _list_actions (6.4ms)
+Rendered _list_record (8.7ms)
+Rendered _list_actions (6.4ms)
+Rendered _list_record (8.8ms)
+Rendered _list (94.7ms)
+Rendered layouts/_menu (2.0ms)
+Rendered layouts/_rodape (0.1ms)
+Completed in 158ms (View: 151, DB: 2) | 200 OK [http://localhost/type_insurances]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-12 15:59:03) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/lightbox.js" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mAboutjr Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `aboutjrs`[0m
+
+
+Processing AboutCompanyAdminController#index (for 127.0.0.1 at 2010-02-12 15:59:04) [GET]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `aboutjrs` [0m
+  [4;35;1mAboutjr Load (0.3ms)[0m   [0mSELECT `aboutjrs`.* FROM `aboutjrs` ORDER BY aboutjrs.`id` ASC LIMIT 0, 15[0m
+Rendering template within layouts/admin
+Rendering list
+Rendered _list_header (1.8ms)
+Rendered _list_column_headings (12.8ms)
+Rendered _messages (1.3ms)
+Rendered _list_actions (9.4ms)
+Rendered _list_record (20.4ms)
+Rendered _list (55.4ms)
+Rendered layouts/_menu (2.1ms)
+Rendered layouts/_rodape (0.1ms)
+Completed in 109ms (View: 103, DB: 2) | 200 OK [http://localhost/about_company_admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-12 15:59:04) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/lightbox.js" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mInsuranceBusiness Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `insurance_businesses`[0m
+DEPRECATION WARNING: config.columns[:insurance].ui_type will disappear in version 2.0. Please use config.columns[:insurance].form_ui instead.. (called from /home/eduzera/Dev/rottweiler/app/controllers/insurance_business_admin_controller.rb:17)
+
+
+Processing InsuranceBusinessAdminController#index (for 127.0.0.1 at 2010-02-12 15:59:05) [GET]
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `insurance_businesses` [0m
+  [4;36;1mInsuranceBusiness Load (0.4ms)[0m   [0;1mSELECT `insurance_businesses`.* FROM `insurance_businesses` ORDER BY insurance_businesses.`id` ASC LIMIT 0, 15[0m
+  [4;35;1mInsurance Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `insurances`[0m
+  [4;36;1mInsurance Load (0.4ms)[0m   [0;1mSELECT * FROM `insurances` WHERE (`insurances`.`id` IN (1,2,3,4)) [0m
+Rendering template within layouts/admin
+Rendering list
+Rendered _list_header (7.5ms)
+Rendered _list_column_headings (29.0ms)
+Rendered _messages (1.3ms)
+Rendered _list_actions (13.7ms)
+Rendered _list_record (26.7ms)
+Rendered _list_actions (6.9ms)
+Rendered _list_record (10.6ms)
+Rendered _list_actions (6.8ms)
+Rendered _list_record (9.9ms)
+Rendered _list_actions (6.9ms)
+Rendered _list_record (9.9ms)
+Rendered _list_actions (6.8ms)
+Rendered _list_record (9.6ms)
+Rendered _list_actions (6.7ms)
+Rendered _list_record (9.5ms)
+Rendered _list_actions (8.5ms)
+Rendered _list_record (11.3ms)
+Rendered _list_actions (6.9ms)
+Rendered _list_record (9.7ms)
+Rendered _list_actions (6.8ms)
+Rendered _list_record (9.6ms)
+Rendered _list_actions (6.8ms)
+Rendered _list_record (9.6ms)
+Rendered _list_actions (6.9ms)
+Rendered _list_record (9.6ms)
+Rendered _list_actions (6.9ms)
+Rendered _list_record (9.6ms)
+Rendered _list_actions (6.9ms)
+Rendered _list_record (9.6ms)
+Rendered _list_actions (6.9ms)
+Rendered _list_record (9.6ms)
+Rendered _list (209.4ms)
+Rendered layouts/_menu (2.0ms)
+Rendered layouts/_rodape (0.1ms)
+Completed in 275ms (View: 263, DB: 3) | 200 OK [http://localhost/insurance_business_admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-12 15:59:05) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/lightbox.js" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mContact Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `contacts`[0m
+
+
+Processing ContactsAdminController#index (for 127.0.0.1 at 2010-02-12 15:59:06) [GET]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `contacts` [0m
+  [4;35;1mContact Load (0.3ms)[0m   [0mSELECT `contacts`.* FROM `contacts` ORDER BY contacts.`id` ASC LIMIT 0, 15[0m
+Rendering template within layouts/admin
+Rendering list
+Rendered _list_header (7.0ms)
+Rendered _list_column_headings (33.4ms)
+Rendered _messages (1.3ms)
+Rendered _list_actions (13.3ms)
+Rendered _list_record (25.6ms)
+Rendered _list (80.8ms)
+Rendered layouts/_menu (2.0ms)
+Rendered layouts/_rodape (0.1ms)
+Completed in 140ms (View: 134, DB: 2) | 200 OK [http://localhost/contacts_admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-12 15:59:06) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/lightbox.js" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mStore Columns (4.1ms)[0m   [0;1mSHOW FIELDS FROM `stores`[0m
+
+
+Processing StoresAdminController#index (for 127.0.0.1 at 2010-02-12 15:59:07) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `stores` [0m
+  [4;36;1mStore Load (0.1ms)[0m   [0;1mSELECT `stores`.* FROM `stores` ORDER BY stores.`id` ASC LIMIT 0, 15[0m
+Rendering template within layouts/admin
+Rendering list
+Rendered _list_header (1.8ms)
+Rendered _list_column_headings (67.6ms)
+Rendered _messages (1.3ms)
+Rendered _list_actions (5.1ms)
+Rendered _list_record (17.8ms)
+Rendered _list (107.2ms)
+Rendered layouts/_menu (2.1ms)
+Rendered layouts/_rodape (0.1ms)
+Completed in 160ms (View: 154, DB: 5) | 200 OK [http://localhost/stores_admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-12 15:59:07) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/lightbox.js" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)

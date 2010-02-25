@@ -48100,3 +48100,143 @@ ActionController::RoutingError (No route matches "/javascripts/lightbox.js" with
   
 
 Rendering rescues/layout (not_found)
+ActiveScaffold: extending RESTful routes for affiliates
+ActiveScaffold: extending RESTful routes for type_insurances
+ActiveScaffold: extending RESTful routes for insurance_business_admin
+ActiveScaffold: extending RESTful routes for insurances
+ActiveScaffold: extending RESTful routes for about_company_admin
+ActiveScaffold: extending RESTful routes for contacts_admin
+ActiveScaffold: extending RESTful routes for stores_admin
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-25 18:30:16) [GET]
+  [4;36;1mTypeInsurance Load (0.2ms)[0m   [0;1mSELECT * FROM `type_insurances` [0m
+Rendering template within layouts/jr
+Rendering home/index
+  [4;35;1mTypeInsurance Load (0.2ms)[0m   [0mSELECT * FROM `type_insurances` LIMIT 4[0m
+  [4;36;1mTypeInsurance Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `type_insurances`[0m
+Rendered layouts/_tipos_seguros (8.4ms)
+Rendered layouts/_menu_esquerda (20.9ms)
+Rendered layouts/_menu_seguradoras (1.1ms)
+Rendered layouts/_menu_parceiros (1.0ms)
+Completed in 173ms (View: 165, DB: 2) | 200 OK [http://localhost/home]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-25 18:30:17) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/lightbox.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-25 18:30:17) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/lightbox.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2010-02-25 18:30:21) [GET]
+  Parameters: {"type"=>"Empresarias"}
+  [4;35;1mInsuranceBusiness Load (0.4ms)[0m   [0mSELECT `insurance_businesses`.* FROM `insurance_businesses` INNER JOIN `insurances` ON `insurances`.id = `insurance_businesses`.insurance_id WHERE (`insurances`.`name` = 'Empresariais Principal') LIMIT 1[0m
+Rendering template within layouts/jr
+Rendering products/index
+  [4;36;1mInsuranceBusiness Load (0.2ms)[0m   [0;1mSELECT `insurance_businesses`.* FROM `insurance_businesses` INNER JOIN `insurances` ON `insurances`.id = `insurance_businesses`.insurance_id WHERE (`insurances`.`name` = 'Empresariais') [0m
+  [4;35;1mInsuranceBusiness Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `insurance_businesses`[0m
+  [4;36;1mTypeInsurance Load (0.1ms)[0m   [0;1mSELECT * FROM `type_insurances` LIMIT 2[0m
+  [4;35;1mTypeInsurance Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `type_insurances`[0m
+Rendered layouts/_tipos_seguros (79.1ms)
+Rendered layouts/_menu_esquerda (4.1ms)
+Rendered layouts/_menu_seguradoras (0.1ms)
+Rendered layouts/_menu_parceiros (0.1ms)
+Completed in 148ms (View: 121, DB: 3) | 200 OK [http://localhost/products?type=Empresarias]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-25 18:30:21) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/lightbox.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#show (for 127.0.0.1 at 2010-02-25 18:30:23) [GET]
+  Parameters: {"id"=>"11"}
+  [4;36;1mInsuranceBusiness Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `insurance_businesses`[0m
+  [4;35;1mInsuranceBusiness Load (0.1ms)[0m   [0mSELECT * FROM `insurance_businesses` WHERE (`insurance_businesses`.`id` = 11) [0m
+  [4;36;1mInsurance Columns (10.5ms)[0m   [0;1mSHOW FIELDS FROM `insurances`[0m
+  [4;35;1mInsurance Load (0.3ms)[0m   [0mSELECT * FROM `insurances` WHERE (`insurances`.`id` = 2) [0m
+Rendering template within layouts/jr
+Rendering products/show
+  [4;36;1mInsuranceBusiness Load (0.4ms)[0m   [0;1mSELECT `insurance_businesses`.* FROM `insurance_businesses` INNER JOIN `insurances` ON `insurances`.id = `insurance_businesses`.insurance_id WHERE (`insurances`.`name` = 'Empresariais') [0m
+  [4;35;1mTypeInsurance Load (0.3ms)[0m   [0mSELECT * FROM `type_insurances` LIMIT 2[0m
+  [4;36;1mTypeInsurance Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `type_insurances`[0m
+Rendered layouts/_tipos_seguros (9.4ms)
+Rendered layouts/_menu_esquerda (4.0ms)
+Rendered layouts/_menu_seguradoras (0.1ms)
+Rendered layouts/_menu_parceiros (0.1ms)
+Completed in 56ms (View: 31, DB: 14) | 200 OK [http://localhost/seguros?id=11]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-25 18:30:24) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/lightbox.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#show (for 127.0.0.1 at 2010-02-25 18:30:28) [GET]
+  Parameters: {"id"=>"13"}
+  [4;35;1mInsuranceBusiness Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `insurance_businesses`[0m
+  [4;36;1mInsuranceBusiness Load (0.3ms)[0m   [0;1mSELECT * FROM `insurance_businesses` WHERE (`insurance_businesses`.`id` = 13) [0m
+  [4;35;1mInsurance Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `insurances`[0m
+  [4;36;1mInsurance Load (0.1ms)[0m   [0;1mSELECT * FROM `insurances` WHERE (`insurances`.`id` = 2) [0m
+Rendering template within layouts/jr
+Rendering products/show
+  [4;35;1mInsuranceBusiness Load (0.2ms)[0m   [0mSELECT `insurance_businesses`.* FROM `insurance_businesses` INNER JOIN `insurances` ON `insurances`.id = `insurance_businesses`.insurance_id WHERE (`insurances`.`name` = 'Empresariais') [0m
+  [4;36;1mTypeInsurance Load (0.1ms)[0m   [0;1mSELECT * FROM `type_insurances` LIMIT 2[0m
+  [4;35;1mTypeInsurance Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `type_insurances`[0m
+Rendered layouts/_tipos_seguros (9.4ms)
+Rendered layouts/_menu_esquerda (3.9ms)
+Rendered layouts/_menu_seguradoras (0.1ms)
+Rendered layouts/_menu_parceiros (0.1ms)
+Completed in 54ms (View: 25, DB: 5) | 200 OK [http://localhost/seguros?id=13]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-25 18:30:28) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/lightbox.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-25 18:30:28) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/lightbox.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)

@@ -12,26 +12,39 @@
     {
       if (document.all&&document.getElementById)
       {
-        navRoot = document.getElementById("nav");
+        navRoot = document.getElementById("menu_esquerda_img_produto");
 
-        for (i=0; i<navRoot.childNodes.length; i++)
+        navRoot.onmouseover=function()
+        {
+           this.className="menu_img over";//this.style.display = "block"; //className+=" over";
+        }
+
+        navRoot.onmouseout=function()
+        {
+          this.className="menu_img unover";
+        }
+
+
+        /*for (i=0; i<navRoot.childNodes.length; i++)
           {
             node = navRoot.childNodes[i];
 
-            if (node.nodeName=="LI")
+            if (node.nodeName=="UL")
             {
+
               node.onmouseover=function()
               {
-                this.className+=" over";
+                this.style.display = "block";//this.className=" #menu_esquerda_img_produto.over"; //className+=" over";
               }
-              node.onmouseout=function() {
-              this.className=this.className.replace
-	            (" over", "");
+
+              node.onmouseout=function()
+              {
+                this.style.display = "none";//alert("BOM TD BEM!!!");//this.style.display = "none";//this.className=this.className.replace(" over", "");
+              }
             }
-          }
+          }*/
         }
       }
-    }
     window.onload=startList;
   </script>
 </head>

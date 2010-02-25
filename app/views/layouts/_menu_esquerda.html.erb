@@ -1,9 +1,9 @@
 <div id="menu_esquerda">
-   <div id="menu_esquerda_img" class="menu_img"><img src="../images/menu_fatiado_01.gif" /></div>
+   <div id="menu_esquerda_img" class="menu_img"><img src="../images/menu_fatiado_01.png" /></div>
    <div id="menu_esquerda_img" class="menu_img"> <%= link_to " ", {:controller => "home", :action => "index"} , :class => "menu_img_home" %></div>
    <div id="menu_esquerda_img" class="menu_img"> <%= link_to " ", {:controller => "about_company", :action => "index"} , :class => "menu_img_quem_somos" %></div>
-   <div id="menu_esquerda_img_produto" id="nav" class="menu_img"> <%= link_to " " , {:controller => "products", :action => "index", :type => "Pessoais"} ,:class => "menu_img_produtos"%>
-      <ul>
+   <div id="menu_esquerda_img_produto" class="menu_img"> <%= link_to " " , {:controller => "products", :action => "index", :type => "Pessoais"} ,:class => "menu_img_produtos"%>
+      <ul id="nav">
         <li><%= link_to "Seguros Empresariais" , {:controller => "products", :action => "index", :type => "Empresarias"} %> </li>
         <li><%= link_to "Seguros Pessoais"     , {:controller => "products", :action => "index", :type => "Pessoais"} %>    </li>
       </ul>

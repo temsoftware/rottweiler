@@ -5,7 +5,7 @@
 
 body{
 	background-color:#ffffff;
-	background-image:url(../images/fundo_pag.gif);
+	background-image:url(../images/fundo_pag.png);
 	background-repeat:repeat-y;
 }
 #img_top{
@@ -30,7 +30,10 @@ body{
 	right:30px;
 	_right:30px;
 	top:210px;
-	z-index:1;
+	z-index:-10;
+}
+#img_tipos_seguros img{
+    z-index:-10;
 }
 #tipos_seguros{
 	position:absolute;
@@ -111,31 +114,31 @@ body{
 }
 .menu_img_home {
 	padding-left:10px;
-	background-image:url(../images/menu_fatiado_02.gif);
+	background-image:url(../images/menu_fatiado_02.png);
 	display:block;
 	height:29px;
 	padding-left:0;
 }
 .menu_img_home:hover {
 	padding-left:10px;
-	background-image:url(../images/menu_fatiado_hover_02.gif);
+	background-image:url(../images/menu_fatiado_hover_02.png);
 	display:block;
 	height:29px;
 	padding-left:0;
 }
 .menu_img_home:active{
-	background-image:url(../images/menu_fatiado_hover_02.gif);
+	background-image:url(../images/menu_fatiado_hover_02.png);
 }
 .menu_img_quem_somos {
 	padding-left:10px;
-	background-image:url(../images/menu_fatiado_03.gif);
+	background-image:url(../images/menu_fatiado_03.png);
 	display:block;
 	height:43px;
 	padding-left:0;
 }
 .menu_img_quem_somos:hover {
 	padding-left:10px;
-	background-image:url(../images/menu_fatiado_hover_03.gif);
+	background-image:url(../images/menu_fatiado_hover_03.png);
 	display:block;
 	height:43px;
 	padding-left:0;
@@ -143,27 +146,28 @@ body{
 
 .menu_img_produtos {
 	padding-left:10px;
-	background-image:url(../images/menu_fatiado_04.gif);
+	background-image:url(../images/menu_fatiado_04.png);
 	display:block;
 	height:36px;
 	padding-left:0;
 }
 #menu_esquerda_img_produto ul{
-    display:none;
     left:152px;
     position:absolute;
     top:110px;
-    z-index:2;
+    z-index:100;
     border-bottom: 1px solid #ccc;
 }
 #menu_esquerda_img_produto ul li {
-	display: block;
 	text-decoration: none;
 	color: #777;
 	background: #fff;
 	padding: 5px;
 	border: 1px solid #ccc;
 	border-bottom: 0;
+	z-index:200;
+	display:none;
+	_width:100px;
 }
 
 #menu_esquerda_img_produto ul li a{
@@ -171,15 +175,25 @@ body{
 	color: #777;
 }
 
-#menu_esquerda_img_produto ul li a:hover{
+#menu_esquerda_img_produto ul, li a:hover{
     text-decoration: none;
 	color: #4B4B4B;
 }
 
 
-#menu_esquerda_img_produto:hover ul{
+#menu_esquerda_img_produto:hover ul li,#menu_esquerda_img_produto.over ul li{
     display: block;
 }
+
+.menu_img.over ul{
+    display: block;
+}
+
+.menu_img.unover ul{
+    display: none;
+}
+
+
 
 /* INICIO Para Configurar o menu corretamente no ie*/
 html ul li {
@@ -192,63 +206,63 @@ html ul li a {
 
 .menu_img_produtos:hover {
 	padding-left:10px;
-	background-image:url(../images/menu_fatiado_hover_04.gif);
+	background-image:url(../images/menu_fatiado_hover_04.png);
 	display:block;
 	height:36px;
 	padding-left:0;
 }
 .menu_img_seguradora {
 	padding-left:10px;
-	background-image:url(../images/menu_fatiado_05.gif);
+	background-image:url(../images/menu_fatiado_05.png);
 	display:block;
 	height:37px;
 	padding-left:0;
 }
 .menu_img_seguradora:hover {
 	padding-left:10px;
-	background-image:url(../images/menu_fatiado_hover_05.gif);
+	background-image:url(../images/menu_fatiado_hover_05.png);
 	display:block;
 	height:37px;
 	padding-left:0;
 }
 .menu_img_cotacao {
 	padding-left:10px;
-	background-image:url(../images/menu_fatiado_06.gif);
+	background-image:url(../images/menu_fatiado_06.png);
 	display:block;
 	height:38px;
 	padding-left:0;
 }
 .menu_img_cotacao:hover {
 	padding-left:10px;
-	background-image:url(../images/menu_fatiado_hover_06.gif);
+	background-image:url(../images/menu_fatiado_hover_06.png);
 	display:block;
 	height:38px;
 	padding-left:0;
 }
 .menu_img_contato {
 	padding-left:10px;
-	background-image:url(../images/menu_fatiado_07.gif);
+	background-image:url(../images/menu_fatiado_07.png);
 	display:block;
 	height:41px;
 	padding-left:0;
 }
 .menu_img_contato:hover {
 	padding-left:10px;
-	background-image:url(../images/menu_fatiado_hover_07.gif);
+	background-image:url(../images/menu_fatiado_hover_07.png);
 	display:block;
 	height:41px;
 	padding-left:0;
 }
 .menu_img_localizacao {
 	padding-left:10px;
-	background-image:url(../images/menu_fatiado_08.gif);
+	background-image:url(../images/menu_fatiado_08.png);
 	display:block;
 	height:30px;
 	padding-left:0;
 }
 .menu_img_localizacao:hover {
 	padding-left:10px;
-	background-image:url(../images/menu_fatiado_hover_08.gif);
+	background-image:url(../images/menu_fatiado_hover_08.png);
 	display:block;
 	height:30px;
 	padding-left:0;
@@ -316,6 +330,7 @@ html ul li a {
     float:right;
     right:30px;
     height:389px;
+    z-index:-10;
 }
 #seg_emp_titulo{
     display:block;
@@ -479,6 +494,7 @@ html ul li a {
     height:389px;
 	background-color:#eae8e8;
 	overflow:hidden;
+	z-index:-10;
 }
 #titulo_seguradora_img{
 	position:absolute;
@@ -513,6 +529,7 @@ html ul li a {
     height:389px;
 	background-color:#eae8e8;
 	overflow:hidden;
+	z-index:-10;
 }
 
 #titulo_contato_img{
@@ -614,6 +631,7 @@ html ul li a {
     top:210px;
     right:30px;
     background:#EAE8E8;
+    z-index:-10;
 }
 
 #quem_somos #quem_somos_titulo{
@@ -653,6 +671,7 @@ html ul li a {
     top:210px;
     right:30px;
     background:#EAE8E8;
+    z-index:-10;
 }
 #localizacao_titulo{
     position:absolute;

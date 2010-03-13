@@ -14,6 +14,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :contacts
   map.resources :locations
   map.resources :affiliates               , :active_scaffold => true
+  map.resources :partners                 , :active_scaffold => true
   map.resources :type_insurances          , :active_scaffold => true
   map.resources :insurance_business_admin , :active_scaffold => true
   map.resources :insurances               , :active_scaffold => true

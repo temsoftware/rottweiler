@@ -6,15 +6,14 @@
 
     <span id="lista_seguradoras_img">
        <ul>
-           <li><img src="../images/porto_logo_grande.jpg"</li>
-           <li><img src="../images/mapfre_logo_grande.jpg"</li>
+          <% for item in @companies %>
+            <% link_to item.website do %>
+              <li><%= image_tag item.data.url(:original) %></li>
+            <% end %>
+          <% end %>
        </ul>
     </span>
 </div>
-
-
-
-
 
 
 <%content_for :insurances_box do%>

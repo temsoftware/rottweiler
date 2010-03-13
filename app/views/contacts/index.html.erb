@@ -13,7 +13,8 @@
      <p>Rua <%=@store.street%>, <%=@store.number%> - <%=@store.neighborhood%> - <%=@store.city%> - <%=@store.state%></p>
 
      <p>Tel: <%=@store.telephone%><br>
-        Fax: <%=@store.fax%><p>
+        Fax: <%=@store.fax%></p>
+
   </span>
 
   <span id="endereco_form">
@@ -23,12 +24,12 @@
     </span>
 
     <span id="contato_info_form">
-       <% form_tag({:controller=>"contacts", :action=>"create"}, :method => "post") do %>
-         <%= label_tag(:nome,     "Nome:"    ,:class => "form_info_label_nome") %>  <%= text_field_tag(:nome_txt    , nil ,:class => "form_info_txt_nome"  ,:size => 30) %><br><br>
-         <%= label_tag(:email,    "E-Mail:"  ,:class => "form_info_label_email") %>  <%= text_field_tag(:email_txt   , nil,:class => "form_info_txt_email" ,:size => 30) %><br><br>
-         <%= label_tag(:telefone, "Telefone:",:class => "form_info_label_tel") %>  <%= text_field_tag(:telefone_txt, nil,:class => "form_info_txt_tel"     ,:size => 30) %><br><br>
-         <%= label_tag(:msg,      "Mensagem:",:class => "form_info_label_msg") %>  <%= text_area_tag (:msg_tx , nil, :rows => 8 , :cols => 35,:class => "form_info_txt_msg"  ) %><br><br>
-         <%= check_box_tag 'news', '1', false, :class => "form_info_check_news"%>  <%= label_tag(:news,     "Desejo receber promoções e oportunidades exclusivas da JR",:class => "form_info_label_news") %> <br><br>
+       <% form_remote_tag :url=> {:controller=>"contacts", :action=>"create"} do %>
+         <%= label_tag(:nome,     "Nome:"    ,:class => "form_info_label_nome") %>    <%= text_field_tag(:nome_txt    , nil ,:class => "form_info_txt_nome"  ,:size => 30) %><br><br>
+         <%= label_tag(:email,    "E-Mail:"  ,:class => "form_info_label_email")%>    <%= text_field_tag(:email_txt   , nil,:class => "form_info_txt_email" ,:size => 30) %><br><br>
+         <%= label_tag(:telefone, "Telefone:",:class => "form_info_label_tel")  %>    <%= text_field_tag(:telefone_txt, nil,:class => "form_info_txt_tel"     ,:size => 30) %><br><br>
+         <%= label_tag(:msg,      "Mensagem:",:class => "form_info_label_msg")  %>    <%= text_area_tag (:msg_tx , nil, :rows => 8 , :cols => 35,:class => "form_info_txt_msg"  ) %><br><br>
+         <%= check_box_tag 'news', '1', false, :class => "form_info_check_news" %>    <%= label_tag(:news,     "Desejo receber promoções e oportunidades exclusivas da JR",:class => "form_info_label_news") %> <br><br>
          <%= submit_tag("Enviar",:class=> "form_info_botao") %><br>
        <% end %>
     </span>

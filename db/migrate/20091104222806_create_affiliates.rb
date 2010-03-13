@@ -1,8 +1,8 @@
 class CreateAffiliates < ActiveRecord::Migration
   def self.up
     create_table :affiliates do |t|
-      t.string :name
-      t.string :website
+      t.string    :name
+      t.string    :website
       t.timestamps
     end
   end
@@ -11,3 +11,4 @@ class CreateAffiliates < ActiveRecord::Migration
     drop_table :affiliates
   end
 end
+

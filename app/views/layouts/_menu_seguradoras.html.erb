@@ -3,10 +3,23 @@
      	<img src="../images/seguradoras.jpg">
     </span>
     <span id="menu_img_seguradora_logos">
-     	<img src="../images/porto_logo.jpg">
+
+      <% for item in Affiliate.all %>
+
+        <span>
+          <% link_to item.website do %>
+            <%= image_tag item.data.url(:small) %>
+          <% end %>
+        </span>
+
+      <% end %>
+
+    </span>
+</div>
+      <!--
+      <img src="../images/porto_logo.jpg">
       <img src="../images/mapfre_logo.jpg">
       <img src="../images/azul_logo.jpg">
       <img src="../images/sulamerica_logo.jpg">
-    </span>
-</div>
+      -->
 

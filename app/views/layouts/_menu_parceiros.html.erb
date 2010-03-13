@@ -3,10 +3,22 @@
     <img src="../images/parceiros.jpg">
   </span>
   <span id="menu_img_parceiro_logos">
+      <% for item in Partner.all %>
+
+        <span>
+          <% link_to item.website do %>
+            <%= image_tag item.data.url() %>
+          <% end %>
+        </span>
+
+      <% end %>
+  </span>
+</div>
+
+<!--
     <img src="../images/ricar_logo.jpg">
     <img src="../images/ricar_locadora_logo.jpg">
     <img src="../images/ricar_logo.jpg">
     <img src="../images/tem_logo.jpg">
-  </span>
-</div>
+-->
 

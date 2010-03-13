@@ -12,11 +12,13 @@
      <p>Rua <%=@store.street%>, <%=@store.number%> - <%=@store.neighborhood%> - <%=@store.city%> - <%=@store.state%></p>
 
      <p>Tel: <%=@store.telephone%><br>
-        Fax: <%=@store.fax%><p>
+        Fax: <%=@store.fax%></p>
   </span>
 
   <span id="img_localizacao">
-    <img src="../images/loja_endereco.jpg">
+    <%= @map.to_html %>
+    <%= @map.div(:width => 367, :height => 254) %>
+    <!--<img src="../images/loja_endereco.jpg">-->
   </span>
 </div>
 

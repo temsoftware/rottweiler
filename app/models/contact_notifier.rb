@@ -1,12 +1,11 @@
 class ContactNotifier < ActionMailer::Base
 
-
-  def contact_notification(nome,email,telefone,msg)
-    @recipients = "#{nome} <#{email}>"
-    #@from = "eduzera@gmail.com"
+  def contact_notification(contact,msg)
+    @recipients = "JR Seguros <eduardozaghi@gmail.com>"
+    #@from = "#{contact.name} <#{contact.email}>"
     #@from = "#{nome} <#{email}>"
     @subject = "[JR Web Site] - Contato do Usuario"
-    @body = {:msg => msg,:nome => nome, :email => email, :telefone => telefone}
+    @body = {:msg => msg,:nome => contact.name, :email => contact.email, :telefone => contact.tel}
   end
 
 

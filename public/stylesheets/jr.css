@@ -3,10 +3,21 @@
 	padding:0;
 }
 
+#pag_fundo{
+    width: 1030px;
+    margin:0 auto;
+    text-align:left; /* "remédio" para o hack do IE */
+    background-image:url(../images/fundo_pag.png);
+	background-repeat:repeat-y;
+	height:860px;
+	z-index:-15;
+	text-align:left;
+}
+
 body{
 	background-color:#ffffff;
-	background-image:url(../images/fundo_pag.png);
-	background-repeat:repeat-y;
+	text-align:center;
+
 }
 #img_top{
 	position:absolute;
@@ -30,10 +41,10 @@ body{
 	right:30px;
 	_right:30px;
 	top:210px;
-	z-index:-10;
+	_z-index:-10;
 }
 #img_tipos_seguros img{
-    z-index:-10;
+    _z-index:-10;
 }
 #tipos_seguros{
 	position:absolute;
@@ -269,13 +280,23 @@ html ul li a {
 }
 /*MENU ESQUERDA FIM*/
 
+/*CONTAINER SEGURADORA E PARCEIROS INICIO*/
+#menu_seguradoras_parceiros{
+    position:absolute;
+    width:165px;
+    top:525px;
+    left:108px;
+}
+
+/*CONTAINER SEGURADORA E PARCEIROS FIM*/
+
 /*MENU IMG SEGURADORAS INICIO*/
 
 #menu_img_seguradoras{
-	float:left;
-	left:108px;
-	position:absolute;
-	top:525px;
+
+
+	position:relative;
+
 	width:160px;
 }
 #menu_img_seguradora_titulo{
@@ -285,18 +306,50 @@ html ul li a {
 	width:100%;
 }
 #menu_img_seguradora_logos{
-	position:relative;
-	top:5px;
+    display:block;
+    position:relative;
+    top:5px;
+    width:200px;
+}
+
+#menu_img_seguradora_logos span{
+    display:block;
+    float:left;
+    height:56px;
+    margin-bottom:5px;
+    margin-left:5px;
+    position:relative;
+    text-align:center;
+    width:69px;
+}
+
+#menu_img_seguradora_logos span a img{
+    border: 0px;
 }
 /*MENU IMG SEGURADORAS FIM*/
 
 /*MENU IMG PARCEIROS INICIO*/
 #menu_img_parceiros{
-	float:left;
-	left:108px;
-	position:absolute;
-	top:685px;
+    top:10px;
+
+	position:relative;
+
 	width:160px;
+	display:block;
+	float:left;
+}
+#menu_img_parceiro_logos span a img{
+    border: 0px;
+}
+#menu_img_parceiro_logos span{
+    display:block;
+    float:left;
+    height:29px;
+    margin-bottom:5px;
+    margin-left:5px;
+    position:relative;
+    text-align:center;
+    width:69px;
 }
 #menu_img_parceiro_titulo{
 	display:block;
@@ -316,7 +369,7 @@ html ul li a {
 	clear:both;
 	height:60px;
 	left:230px;
-	position:absolute;
+	position:relative;
 	top:800px;
 	width:100%;
 }
@@ -330,7 +383,7 @@ html ul li a {
     float:right;
     right:30px;
     height:389px;
-    z-index:-10;
+    _z-index:-10;
 }
 #seg_emp_titulo{
     display:block;
@@ -494,7 +547,7 @@ html ul li a {
     height:389px;
 	background-color:#eae8e8;
 	overflow:hidden;
-	z-index:-10;
+	_z-index:-10;
 }
 #titulo_seguradora_img{
 	position:absolute;
@@ -516,6 +569,12 @@ html ul li a {
 	float:left;
 	padding-left:20px;
 	padding-top:20px;
+	padding-bottom:20px;
+	display:block;
+	height:104px;
+}
+#lista_seguradoras_img ul li a img{
+    border:0px;
 }
 /*FIM PAGINA DE SEGURADORAS*/
 
@@ -529,7 +588,7 @@ html ul li a {
     height:389px;
 	background-color:#eae8e8;
 	overflow:hidden;
-	z-index:-10;
+	_z-index:-10;
 }
 
 #titulo_contato_img{
@@ -631,7 +690,7 @@ html ul li a {
     top:210px;
     right:30px;
     background:#EAE8E8;
-    z-index:-10;
+    _z-index:-10;
 }
 
 #quem_somos #quem_somos_titulo{
@@ -671,7 +730,7 @@ html ul li a {
     top:210px;
     right:30px;
     background:#EAE8E8;
-    z-index:-10;
+    _z-index:-10;
 }
 #localizacao_titulo{
     position:absolute;

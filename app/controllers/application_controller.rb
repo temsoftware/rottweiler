@@ -7,4 +7,9 @@ class ApplicationController < ActionController::Base
 
   # Scrub sensitive parameters from your log
   # filter_parameter_logging :password
+
+  #Change Prototype by JQuery - Eduzera on 09/10/2010
+  ActionView::Helpers::PrototypeHelper.const_set(:JQUERY_VAR, 'jQuery')
+
 end
+

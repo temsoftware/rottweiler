@@ -34,9 +34,6 @@ include FaceboxRender
       flash[:status] = "error"
     end
 
-    #ContactNotifier.deliver_contact_notification(@nome,@email,@telefone,@msg)
-
-    #redirect_to :controller => "contacts", :action => "show"
 
     respond_to do |format|
      format.html

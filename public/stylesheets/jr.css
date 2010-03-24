@@ -572,6 +572,7 @@ html ul li a {
 	padding-bottom:20px;
 	display:block;
 	height:104px;
+	_height:154px;
 }
 #lista_seguradoras_img ul li a img{
     border:0px;

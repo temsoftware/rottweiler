@@ -7,9 +7,9 @@
     <span id="lista_seguradoras_img">
        <ul>
           <% for item in @companies %>
-            <% link_to item.website do %>
-              <li><%= image_tag item.data.url(:original) %></li>
-            <% end %>
+            <li><% link_to item.website do %>
+              <%= image_tag item.data.url(:original) %>
+            <% end %></li>
           <% end %>
        </ul>
     </span>

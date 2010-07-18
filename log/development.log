@@ -67596,3 +67596,115 @@ ActionController::RoutingError (No route matches "/javascripts/lightbox.js" with
   
 
 Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-18 17:40:36) [GET]
+  [4;35;1mTypeInsurance Load (0.3ms)[0m   [0mSELECT * FROM `type_insurances` [0m
+Rendering template within layouts/jr
+Rendering home/index
+  [4;36;1mTypeInsurance Load (0.3ms)[0m   [0;1mSELECT * FROM `type_insurances` LIMIT 4[0m
+  [4;35;1mTypeInsurance Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `type_insurances`[0m
+Rendered layouts/_tipos_seguros (3.8ms)
+Rendered layouts/_menu_esquerda (2.6ms)
+  [4;36;1mAffiliate Load (0.3ms)[0m   [0;1mSELECT * FROM `affiliates` [0m
+Rendered layouts/_menu_seguradoras (6.8ms)
+  [4;35;1mPartner Load (0.3ms)[0m   [0mSELECT * FROM `partners` [0m
+Rendered layouts/_menu_parceiros (4.5ms)
+Completed in 27ms (View: 21, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-18 17:40:37) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/lightbox.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-18 17:40:37) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/lightbox.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2010-07-18 18:09:07) [GET]
+  [4;36;1mStore Load (0.3ms)[0m   [0;1mSELECT * FROM `stores` LIMIT 1[0m
+Rendering template within layouts/jr
+Rendering locations/index
+  [4;35;1mStore Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `stores`[0m
+  [4;36;1mTypeInsurance Load (0.7ms)[0m   [0;1mSELECT * FROM `type_insurances` LIMIT 2[0m
+  [4;35;1mTypeInsurance Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `type_insurances`[0m
+Rendered layouts/_tipos_seguros (8.8ms)
+Rendered layouts/_menu_esquerda (2.5ms)
+  [4;36;1mAffiliate Load (0.3ms)[0m   [0;1mSELECT * FROM `affiliates` [0m
+Rendered layouts/_menu_seguradoras (77.5ms)
+  [4;35;1mPartner Load (0.3ms)[0m   [0mSELECT * FROM `partners` [0m
+Rendered layouts/_menu_parceiros (4.6ms)
+Completed in 122ms (View: 114, DB: 5) | 200 OK [http://localhost/locations]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-18 18:09:07) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/lightbox.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-18 18:09:07) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/lightbox.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-18 18:10:28) [GET]
+  [4;36;1mTypeInsurance Load (0.3ms)[0m   [0;1mSELECT * FROM `type_insurances` [0m
+Rendering template within layouts/jr
+Rendering home/index
+  [4;35;1mTypeInsurance Load (0.2ms)[0m   [0mSELECT * FROM `type_insurances` LIMIT 4[0m
+  [4;36;1mTypeInsurance Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `type_insurances`[0m
+Rendered layouts/_tipos_seguros (3.4ms)
+Rendered layouts/_menu_esquerda (2.8ms)
+  [4;35;1mAffiliate Load (0.3ms)[0m   [0mSELECT * FROM `affiliates` [0m
+Rendered layouts/_menu_seguradoras (5.0ms)
+  [4;36;1mPartner Load (0.3ms)[0m   [0;1mSELECT * FROM `partners` [0m
+Rendered layouts/_menu_parceiros (4.4ms)
+Completed in 24ms (View: 18, DB: 2) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-18 18:10:29) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/lightbox.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-18 18:10:29) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/lightbox.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)

@@ -18,7 +18,7 @@ development:
   adapter: mysql
   encoding: utf8
   reconnect: false
-  database: hottweiler_development
+  database: hottweiler
   pool: 5
   username: root
   password: root
@@ -30,7 +30,7 @@ test:
   adapter: mysql
   encoding: utf8
   reconnect: false
-  database: hottweiler_test
+  database: hottweiler
   pool: 5
   username: root
   password: root
@@ -39,7 +39,7 @@ production:
   adapter: mysql
   encoding: utf8
   reconnect: false
-  database: hottweiler_production
+  database: hottweiler
   pool: 5
   username: root
   password: root

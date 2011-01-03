@@ -371,7 +371,7 @@ html ul li a {
 	left:230px;
 	position:relative;
 	top:800px;
-	width:100%;
+	width:700px;
 }
 /*PAGINA PRODUTOS*/
 #seguros_empresariais{
@@ -772,4 +772,6 @@ html ul li a {
     top:90px;
 }
 /*FIM PAGINA LOCALIZACAO*/
+
+.tipo_seguros_box a, .tipo_seguros_box a:visited{ color: #4B4B4B; text-decoration: none; }
 

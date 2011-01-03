@@ -1,5 +1,5 @@
 class ProductsController < ApplicationController
-
+  skip_before_filter :authenticate
   layout "jr"
 
   ImageSeguroPessoais     = "../images/seguros_pess_titulo_esq.jpg"

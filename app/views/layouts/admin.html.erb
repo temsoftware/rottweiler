@@ -17,12 +17,13 @@
 <body class ="bg_siscog">
   <div id="wrap">
     <div id="header">
-      <p id="toplinks">Bem vindo(a) </p>
+      <p id="toplinks">Bem vindo(a) <%=session[:login]%>! - <%=link_to "Logout", session_path(session[:id]), :method => :delete%> </p>
       <h1>Sis<span class="fade">Cog</span></h1>
       <p id="slogan">Gerenciando seu negocio de forma inteligente.</p>
     </div>
 
-    <div id="content">      <%=yield%>
+    <div id="content">
+      <%=yield%>
     </div>
 
     <div id="sidebar">

@@ -9,7 +9,9 @@ ActionController::Routing::Routes.draw do |map|
   # Sample of named route:
   #   map.purchase 'products/:id/purchase', :controller => 'catalog', :action => 'purchase'
   # This route can be invoked with purchase_url(:id => product.id)
+  map.resources :sessions
   map.resources :home
+  map.resources :quotations
   map.resources :products
   map.resources :about_company
   map.resources :contacts
@@ -26,6 +28,8 @@ ActionController::Routing::Routes.draw do |map|
 
 
   map.seguros '/seguros', :controller => "products", :action => "show"
+
+  map.admin '/admin', :controller => "sessions", :action => "new"
 
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'

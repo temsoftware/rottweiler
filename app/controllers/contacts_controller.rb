@@ -1,7 +1,7 @@
 class ContactsController < ApplicationController
 
 include FaceboxRender
-
+  skip_before_filter :authenticate
   layout "jr"
 
   def index

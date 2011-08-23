@@ -21,7 +21,7 @@ development:
   database: hottweiler
   pool: 5
   username: root
-  password: root
+  password: loldesign2011
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -33,7 +33,7 @@ test:
   database: hottweiler
   pool: 5
   username: root
-  password: root
+  password: loldesign2011
 
 production:
   adapter: mysql
@@ -42,4 +42,4 @@ production:
   database: hottweiler
   pool: 5
   username: root
-  password: root
+  password: loldesign2011

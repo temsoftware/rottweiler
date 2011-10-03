@@ -8,6 +8,7 @@ require File.join(File.dirname(__FILE__), 'boot')
 
 
 
+
 require 'smtp_tls'
 
 Rails::Initializer.run do |config|
